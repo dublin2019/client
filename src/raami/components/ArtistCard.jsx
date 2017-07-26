@@ -20,7 +20,7 @@ const ArtistCard = ({ artist: { agent, continent, description, legal, name, tran
   <CardHeader style={{ fontWeight: 600 }} title="Artist information"/>
   <CardText>
     <p>
-      Please fill in the general fields to register to the W75 art show.
+      Please fill in the general fields to register to the W77 art show.
       You can come back to edit this form and fill in details concerning
       individual art works later. The fee is a preliminary estimate and
       may change. Payment will be due in April by the latest. Please wait
@@ -94,7 +94,7 @@ const ArtistCard = ({ artist: { agent, continent, description, legal, name, tran
       I accept the{' '}
       <BasicRulesDialog>
         <span style={{ cursor: 'pointer', textDecoration: 'underline' }}>
-          Worldcon 75 Art Show Basic Rules
+          Worldcon 77 Art Show Basic Rules
           <OpenInNew style={{ color: '#888', height: 16, marginLeft: 2, position: 'relative', top: 3 }} />
         </span>
       </BasicRulesDialog>

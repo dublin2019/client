@@ -1,12 +1,12 @@
 // query: Map({ email, member_number, name })
 export const memberLookup = (query) => ({
-  module: 'kansa',
+  module: 'members',
   type: 'MEMBER_LOOKUP',
   query
 });
 
 export const memberSet = ({ email, people, roles }) => ({
-  module: 'kansa',
+  module: 'members',
   type: 'MEMBER_SET',
   email,
   people,
@@ -14,13 +14,13 @@ export const memberSet = ({ email, people, roles }) => ({
 });
 
 export const memberUpdate = (id, changes) => ({
-  module: 'kansa',
+  module: 'members',
   type: 'MEMBER_UPDATE',
   id,
   changes
 });
 
 export const requestSlackInvite = () => ({
-  module: 'kansa',
+  module: 'members',
   type: 'REQUEST_SLACK_INVITE'
 })

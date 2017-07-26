@@ -23,21 +23,21 @@ export const memberTypeData = {
     secondary: 'Have never been a Worldcon member',
     icon: <StarTicket/>
   },
-  Youth: {
-    primary: 'Youth membership',
-    daypass: 'Youth day pass (from €15/day)',
-    secondary: 'Born on or after 10 August 1991',
+  YoungAdult: {
+    primary: 'Young Adult membership',
+    daypass: 'Young Adult day pass (from €15/day)',
+    secondary: 'Born on or after 15 August 1994',
     icon: <DirectionsRun/>
   },
   Child: {
     primary: 'Child membership',
     daypass: 'Child day pass (from €10/day)',
-    secondary: 'Born on or after 10 August 2001',
+    secondary: 'Born on or after 14 August 2006',
     icon: <SmilingFace/>
   },
-  KidInTow: {
-    primary: 'Kid-in-tow membership',
-    secondary: 'Born on or after 10 August 2011',
+  Infant: {
+    primary: 'Infant membership',
+    secondary: 'Born on or after 14 August 2013',
     icon: <ChildFriendly/>
   },
   Supporter: {

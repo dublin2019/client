@@ -9,7 +9,7 @@ const defaultState = Map({
 });
 
 export default function(state = defaultState, action) {
-  if (action.error || action.module !== 'kansa') return state;
+  if (action.error || action.module !== 'members') return state;
   switch (action.type) {
 
     case 'GET_DAYPASS_PRICES':

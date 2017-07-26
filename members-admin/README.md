@@ -16,7 +16,7 @@ npm run build:prod
 #### To build inside a Docker container
 
 ```sh
-docker build -t kansa-admin-build --build-arg 'host=localhost:4430 title=Kansa' .
+docker build -t kansa-admin-build --build-arg 'host=localhost:4430 title=Members' .
   # replace localhost:4430 with e.g. 192.168.99.100:4430 if using a Docker
   # Machine VM, or some non-default configuration
 
@@ -29,7 +29,7 @@ docker run --rm -v ${PWD}/dist:/usr/src/app/dist kansa-admin-build`
 
 Both procedures should output a file `dist/build.js`, after which the `dist/`
 directory may be served in a read-only file system; the member data will be read
-and written to using the [server API](https://github.com/worldcon75/api).
+and written to using the [server API](https://github.com/dublin2019/api).
 
 For development, `npm start` will build the app and run the webpack-dev-server
 at <http://localhost:8080/webpack-dev-server/>.

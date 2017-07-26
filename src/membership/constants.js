@@ -5,12 +5,12 @@ export const fields = [
   'country', 'state', 'city', 'paper_pubs'
 ]
 
-export const membershipTypes = [ 'NonMember', 'Exhibitor', 'Supporter', 'KidInTow', 'Child', 'Youth', 'FirstWorldcon', 'Adult' ]
+export const membershipTypes = [ 'NonMember', 'Exhibitor', 'Supporter', 'Backer', 'Voter', 'Friend', 'Infant', 'Child', 'YoungAdult', 'FirstWorldcon', 'Adult' ]
 
 export const emptyPaperPubsMap = Map({ name: '', address: '', country: '' })
 
 export const isWSFSMember = (member) => {
-  const types = ['Supporter', 'Youth', 'FirstWorldcon', 'Adult']
+  const types = ['Supporter', 'Voter', 'YoungAdult', 'FirstWorldcon', 'Adult']
   const membership = typeof member === 'string' ? member : member.get('membership')
   return types.indexOf(membership) !== -1
 }

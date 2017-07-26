@@ -8,7 +8,7 @@ import Snackbar from 'material-ui/Snackbar'
 import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui/Toolbar';
 import Menu from 'material-ui/svg-icons/navigation/menu'
 
-import Worldcon75 from '../../lib/worldcon75'
+import Worldcon77 from '../../lib/worldcon77'
 import { darkBlue } from '../../theme'
 import { hideMessage } from '../actions/app'
 import { logout } from '../actions/auth'
@@ -95,7 +95,7 @@ class App extends React.Component {
       >
         <div>
           { email ? [
-            <Worldcon75 key="logo"
+            <Worldcon77 key="logo"
               className={menuOpen ? 'logo navbar' : 'logo'}
             />,
             <NavDrawer
@@ -117,7 +117,7 @@ class App extends React.Component {
             />
           ] : (
             <h1 style={{ paddingTop: 24 }}>
-              <Worldcon75 className="h1-logo" />
+              <Worldcon77 className="h1-logo" />
               {title}
             </h1>
           )}

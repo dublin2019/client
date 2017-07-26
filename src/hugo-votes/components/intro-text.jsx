@@ -14,7 +14,7 @@ const VoteIntroText = () => (
       announced on Tuesday 4 April 2017.
     </p>
     <p>
-      The Hugo Awards will be presented at a formal ceremony on Friday 11 August 2017, at Worldcon 75, the 75th World
+      The Hugo Awards will be presented at a formal ceremony on Friday 19 August 2019, at Worldcon 77, the 77th World
       Science Fiction Convention, in Helsinki, Finland. We currently plan to continue the recent tradition of
       streaming the ceremony live via the Internet, enabling fans around the world to experience the event.
     </p>
@@ -117,7 +117,7 @@ const VoteIntroText = () => (
     </p>
     <p>
       We ask that voters honor publishers’ and creators’ request that they reserve these copies for their personal use
-      only, and that they do not share these works with non-members of Worldcon 75.
+      only, and that they do not share these works with non-members of Worldcon 77.
     </p>
   </CardText>
 );

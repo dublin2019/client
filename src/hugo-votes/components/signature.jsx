@@ -24,7 +24,7 @@ export default class VoteSignature extends React.Component {
         <CardText>
           To access the Hugo voter packet and/or to start voting, please enter
           your name here to confirm that you are
-          {' '}<b>{preferredName}</b> ({person.get('email')}), Worldcon 75
+          {' '}<b>{preferredName}</b> ({person.get('email')}), Worldcon 77
           member <b>#{person.get('member_number')}</b>:
           <form onSubmit={ev => {
             ev.preventDefault();

@@ -1,7 +1,7 @@
 import React from 'react';
 import SvgIcon from 'material-ui/SvgIcon';
 
-const Worldcon75 = (props) => (
+const Worldcon77 = (props) => (
   <SvgIcon {...props} viewBox="0 0 738 305">
     <path d="M94.6,121.8L70.8,198.9L41.7,95.5l13.6,0l15.8,57.2L88.3,95.5l12.6,0l17.2,57.2L133.9,95.5l13.6,0L117.8,199Z"/>
     <path d="M149,94.3l-3,0l-11.2,0l-1.8,0L132.6,96l-14.5,52.6L102.2,95.9l-0.5,-1.6l-1.7,0l-10.8,0l-1.7,0L87,95.9L71.1,148.6L56.6,96L56.1,94.3l-1.7,0l-11.2,0l-3,0L41,97.2l27.6,98.3l2.1,7.5L73,195.6L94.6,125.7l21,69.8l2.2,7.5l2.2,-7.5L148.2,97.2Zm-3,2.3l-28.2,98.3l-23.2,-77l-23.8,77L43.2,96.6l11.2,0L71,156.8L89.2,96.6l10.8,0l18.2,60.2L134.8,96.6Z"/>
@@ -26,4 +26,4 @@ const Worldcon75 = (props) => (
   </SvgIcon>
 );
 
-export default Worldcon75;
+export default Worldcon77;

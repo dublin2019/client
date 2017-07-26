@@ -60,9 +60,9 @@ class TekMemberTypeList extends React.Component {
         <ListItem
           innerDivStyle={{ paddingLeft: 60 }}
           leftIcon={<DirectionsRun/>}
-          primaryText={`${messages.fi.Youth()} (${this.getAmount('Youth')/100}€)`}
+          primaryText={`${messages.fi.YoungAdult()} (${this.getAmount('YoungAdult')/100}€)`}
           secondaryText="TEKin jäsen, joka on syntynyt 10.8.1991 tai sen jälkeen"
-          value="Youth"
+          value="YoungAdult"
         />
         <ListItem
           innerDivStyle={{ paddingLeft: 60 }}
@@ -117,12 +117,12 @@ class TekMemberIndex extends React.Component {
           <CardHeader
             className="action-head"
             textStyle={{ paddingRight: 0 }}
-            title="Worldcon 75 tapahtuman jäsenhinnat TEKin jäsenille"
+            title="Worldcon 77 tapahtuman jäsenhinnat TEKin jäsenille"
             style={{ fontWeight: 600, marginBottom: 16 }}
           />
           <CardText style={{ paddingTop: 0 }}>
-            <p>Worldcon 75 tarjoaa tapahtumaan alennettuja hintoja TEKin jäsenille.</p>
-            <p>Täysjäsenyys sisältää mm. pääsyn tapahtumaan kaikkina tapahtuman päivinä ja oikeuden äänestää Hugo-äänestyksessä. Lisätietoa jäsenyyksien eroista löytyy tapahtuman sivuilta osoitteesta <a href="http://worldcon.fi/">worldcon.fi</a></p>
+            <p>Worldcon 77 tarjoaa tapahtumaan alennettuja hintoja TEKin jäsenille.</p>
+            <p>Täysjäsenyys sisältää mm. pääsyn tapahtumaan kaikkina tapahtuman päivinä ja oikeuden äänestää Hugo-äänestyksessä. Lisätietoa jäsenyyksien eroista löytyy tapahtuman sivuilta osoitteesta <a href="http://worldcon.fie/">worldcon.ie</a></p>
           </CardText>
           <CardActions style={{ marginLeft: 8, paddingTop: 0 }}>
             <TekMemberTypeList

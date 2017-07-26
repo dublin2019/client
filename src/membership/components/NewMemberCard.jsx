@@ -11,23 +11,23 @@ const contents = {
       <p>
         Persons who have never been attending or supporting members of any
         previous Worldcon are eligible for a <b>First Worldcon</b> attending
-        membership of Worldcon 75.
+        membership of Worldcon 77.
       </p><p>
         <b>Child</b> members are not eligible to participate in the Hugo Awards
         or Site Selection processes.
       </p><p>
-        A <b>Supporting</b> membership of Worldcon 75 grants you the right to
+        A <b>Supporting</b> membership of Worldcon 77 grants you the right to
         participate in the functions of the World Science Fiction Society (Hugo
         Awards and Site Selection), but does not grant general admission to the
         convention.
       </p><p>
-        Participants of the 2017 Worldcon Site Selection have been automatically
+        Participants of the 2019 Worldcon Site Selection have been automatically
         granted supporting membership.
       </p>
     </div>,
     memberships: [
-      'FirstWorldcon', 'Youth', 'Adult', '_divider',
-      'Child', 'KidInTow', '_divider',
+      'FirstWorldcon', 'YoungAdult', 'Adult', '_divider',
+      'Child', 'Infant', '_divider',
       'Supporter'
     ]
   },
@@ -38,35 +38,35 @@ const contents = {
       <p>
         Persons who have never been attending or supporting members of any
         previous Worldcon are eligible for a <b>First Worldcon</b> attending
-        membership of Worldcon 75.
+        membership of Worldcon 77.
       </p><p>
-        Persons born on 10 August 1991 or later qualify for <b>Youth</b>{' '}
-        attending memberships of Worldcon 75 (€100).
+        Persons born on 14 August 1994 or later qualify for <b>Young Adult</b>{' '}
+        attending memberships of Worldcon 77 (€100).
       </p><p>
         All attending memberships carry the same rights as supporting
         memberships, in addition to the right of general admission to the
         convention.
       </p>
     </div>,
-    memberships: ['FirstWorldcon', 'Youth', 'Adult']
+    memberships: ['FirstWorldcon', 'YoungAdult', 'Adult']
   },
 
   child: {
-    title: 'New child/kid-in-tow membership',
+    title: 'New child/infant membership',
     body: <div>
       <p>
-        <b>Child</b> and <b>Kid-in-tow</b> members are not eligible to
+        <b>Child</b> and <b>Infant</b> members are not eligible to
         participate in the Hugo Awards or Site Selection processes.
       </p>
     </div>,
-    memberships: [ 'Child', 'KidInTow' ]
+    memberships: [ 'Child', 'Infant' ]
   },
 
   daypass: {
     title: 'New day pass',
     body: <div>
       <p>
-        If you are only able to come to Worldcon 75 for a day or two, we have
+        If you are only able to come to Worldcon 77 for a day or two, we have
         day passes available. This pass will entitle you to enjoy the activities,
         programming and events of Worldcon for that day, except for the parties
         in the evenings.
@@ -77,14 +77,14 @@ const contents = {
         precedence for this special event seating.
       </p>
     </div>,
-    memberships: ['Adult', 'Youth', 'Child']
+    memberships: ['Adult', 'YoungAdult', 'Child']
   },
 
   support: {
     title: 'New supporting membership',
     body: <div>
       <p>
-        A non-attending membership of Worldcon 75 which will grant you the right
+        A non-attending membership of Worldcon 77 which will grant you the right
         to participate in the functions of the World Science Fiction Society
         (Hugo Awards and Site Selection).
       </p><p>

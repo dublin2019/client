@@ -5,14 +5,14 @@ export const BasicRules = () => <div>
   <h4>Location: Messukeskus, Hall 5</h4>
 
   <p>
-    Hours: Opening hours of Worldcon 75 Exhibits hall (TBA), closing early on
+    Hours: Opening hours of Worldcon 77 Exhibits hall (TBA), closing early on
     Sunday for auction.
   </p><p>
-    To exhibit in the art show you must be a member of Worldcon 75. If you do
+    To exhibit in the art show you must be a member of Worldcon 77. If you do
     not plan to attend and are sending your work to the show via a third party,
     you only need a supporting membership.
   </p><p>
-    To view, bid, or purchase artwork, one must have an attending Worldcon 75
+    To view, bid, or purchase artwork, one must have an attending Worldcon 77
     membership.
   </p><p>
     We welcome all styles of original art by creators from all backgrounds
@@ -20,11 +20,11 @@ export const BasicRules = () => <div>
     matter should stay under the very broad umbrella of ‘science fiction,
     fantasy, horror, astronomical, fannish, or related themes’.
   </p><p>
-    Worldcon 75 will reserve the right to leave out artworks or artists that
+    Worldcon 77 will reserve the right to leave out artworks or artists that
     fail to meet our quality standards or are otherwise unsuitable for the art
     show.
   </p><p>
-    Wordcon 75 art show has three sections: the auction gallery, the print shop
+    Worldcon 77 art show has three sections: the auction gallery, the print shop
     and the digital gallery. Artists are welcome to display work in any section
     of the art show or in all of them.
   </p><p>
@@ -43,7 +43,7 @@ export const BasicRules = () => <div>
     <b>Copyright</b><br/>
     All artworks must be created by the submitting artist. If the artwork is a
     product of collaboration with other artist(s) that must be clearly
-    indicated when submitting said artwork to the art show. The Worldcon 75 art
+    indicated when submitting said artwork to the art show. The Worldcon 77 art
     show does not accept art for resale.
   </p><p>
     <b>Reproduction Rights:</b><br/>
@@ -64,7 +64,7 @@ export const BasicRules = () => <div>
     show.
   </p><p>
     <b>Insurance:</b><br/>
-    Worldcon75 cannot provide insurance coverage for art exhibited in the show,
+    Worldcon 77 cannot provide insurance coverage for art exhibited in the show,
     so you should ensure that your own insurance will cover your art while it
     is at the show.
   </p><p>
@@ -98,7 +98,7 @@ export const BasicRules = () => <div>
     for return shipping. If you mail art to us without our prior written
     agreement, we will return it.
   </p><p>
-    Worldcon 75 will take a 10% commission on all sales.
+    Worldcon 77 will take a 10% commission on all sales.
   </p><p>
     <b>Presentation:</b><br/>
     All two-dimensional (flat) entries in the auction gallery must be matted,
@@ -115,7 +115,7 @@ export const BasicRules = () => <div>
     gallery works so that they can be appropriately displayed.
   </p><p>
     <b>Payment:</b><br/>
-    Worldcon 75 will pay artists for sales of works within 45 days of the end
+    Worldcon 77 will pay artists for sales of works within 45 days of the end
     of the convention.
   </p><p>
     <b>Cancellations:</b><br/>
@@ -126,7 +126,7 @@ export const BasicRules = () => <div>
   </p><p>
     <b>Disclaimer:</b><br/>
     While we fully intend these to be the policies that actually govern the
-    Worldcon 75 art show, we reserve the right to make changes or
+    Worldcon 77 art show, we reserve the right to make changes or
     interpretations if unforeseen circumstances arise or for accessibility
     reasons. Any such decisions will be guided by the spirit, rather than the
     letter, of these policies.
@@ -150,7 +150,7 @@ export class BasicRulesDialog extends React.Component {
         modal={false}
         onRequestClose={() => this.setState({ open: false })}
         open={this.state.open}
-        title="Worldcon 75 Art Show Basic Rules"
+        title="Worldcon 77 Art Show Basic Rules"
       >
         <BasicRules />
       </Dialog>

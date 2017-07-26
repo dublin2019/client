@@ -62,11 +62,6 @@ class Index extends React.Component {
           expandable={isLoggedIn}
           onSelectType={() => push(upgradePath)}
         />
-        <NewMemberCard
-          category="daypass"
-          expandable={true}
-          onSelectType={(type) => push(`/daypass/${type}`)}
-        />
       </Col>
     </Row>
   }
