@@ -60,18 +60,16 @@ class MemberCard extends React.Component {
           </p>}
           secondaryTextLines={2}
         />
-      </MemberEdit>
-    ]
-    if (member.get('membership') !== 'Adult') actions.push(
+      </MemberEdit>,
       <Action
         key="up"
         innerDivStyle={{ paddingLeft: 60 }}
-        leftIcon={<ThumbUp/>}
+        leftIcon={<ThumbUp style={{ top: 12 }}/>}
         onTouchTap={() => push(`/upgrade/${id}`)}
         primaryText="Upgrade membership"
-        secondaryText=""
+        secondaryText="and/or add paper publications"
       />
-    )
+    ]
     if (showHugoActions && member.get('can_hugo_vote')) actions.push(
       <Action
         key="hv"
