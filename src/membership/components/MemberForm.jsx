@@ -149,6 +149,7 @@ export default class MemberForm extends React.Component {
           prices={prices}
           {...inputProps}
         />
+      ) : this.hasPaperPubs ? (
         <EditPaperPubs
           prices={prices}
           {...inputProps}
