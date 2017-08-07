@@ -116,7 +116,7 @@ export default class ArtworkCard extends React.Component {
           <br/>
           <span style={{position:'relative', top: '20px', fontSize: 11 }}>
               <i>By uploading I give permission for this image to be 
-              reproduced to promote the art show on the Worldcon 77 website, social media accounts,
+              reproduced to promote the art show on the Dublin 2019 - An Irish Worldcon - website, social media accounts,
               and at the convention.</i>
             </span>
         </div>

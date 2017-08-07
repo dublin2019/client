@@ -11,12 +11,12 @@ const contents = {
       <p>
         Persons who have never been attending or supporting members of any
         previous Worldcon are eligible for a <b>First Worldcon</b> attending
-        membership of Worldcon 77.
+        membership of Dublin 2019 - An Irish Worldcon.
       </p><p>
         <b>Child</b> members are not eligible to participate in the Hugo Awards
         or Site Selection processes.
       </p><p>
-        A <b>Supporting</b> membership of Worldcon 77 grants you the right to
+        A <b>Supporting</b> membership of Dublin 2019 - An Irish Worldcon - grants you the right to
         participate in the functions of the World Science Fiction Society (Hugo
         Awards and Site Selection), but does not grant general admission to the
         convention.
@@ -38,10 +38,10 @@ const contents = {
       <p>
         Persons who have never been attending or supporting members of any
         previous Worldcon are eligible for a <b>First Worldcon</b> attending
-        membership of Worldcon 77.
+        membership of Dublin 2019 - An Irish Worldcon.
       </p><p>
         Persons born on 14 August 1994 or later qualify for <b>Young Adult</b>{' '}
-        attending memberships of Worldcon 77 (€100).
+        attending memberships of Dublin 2019 - An Irish Worldcon (€100).
       </p><p>
         All attending memberships carry the same rights as supporting
         memberships, in addition to the right of general admission to the
@@ -66,7 +66,7 @@ const contents = {
     title: 'New day pass',
     body: <div>
       <p>
-        If you are only able to come to Worldcon 77 for a day or two, we have
+        If you are only able to come to Dublin 2019 - An Irish Worldcon - for a day or two, we have
         day passes available. This pass will entitle you to enjoy the activities,
         programming and events of Worldcon for that day, except for the parties
         in the evenings.
@@ -84,7 +84,7 @@ const contents = {
     title: 'New supporting membership',
     body: <div>
       <p>
-        A non-attending membership of Worldcon 77 which will grant you the right
+        A non-attending membership of Dublin 2019 - An Irish Worldcon - which will grant you the right
         to participate in the functions of the World Science Fiction Society
         (Hugo Awards and Site Selection).
       </p><p>

@@ -91,7 +91,7 @@ const NewPaymentForm = ({ disabled, onChange, people, purchase, requireMembershi
           marginTop: -4,
           textAlign: 'right'
         }}>
-          If you've received an invoice from Worldcon 77, please include its
+          If you've received an invoice from Dublin 2019 - An Irish Worldcon, please include its
           invoice number here.
         </div>
       ]}

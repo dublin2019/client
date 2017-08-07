@@ -117,12 +117,12 @@ class TekMemberIndex extends React.Component {
           <CardHeader
             className="action-head"
             textStyle={{ paddingRight: 0 }}
-            title="Worldcon 77 tapahtuman jäsenhinnat TEKin jäsenille"
+            title="Dublin 2019 - An Irish Worldcon - Day Passes"
             style={{ fontWeight: 600, marginBottom: 16 }}
           />
           <CardText style={{ paddingTop: 0 }}>
-            <p>Worldcon 77 tarjoaa tapahtumaan alennettuja hintoja TEKin jäsenille.</p>
-            <p>Täysjäsenyys sisältää mm. pääsyn tapahtumaan kaikkina tapahtuman päivinä ja oikeuden äänestää Hugo-äänestyksessä. Lisätietoa jäsenyyksien eroista löytyy tapahtuman sivuilta osoitteesta <a href="http://worldcon.fie/">worldcon.ie</a></p>
+            <p>Dublin 2019 - An Irish Worldcon - tarjoaa tapahtumaan alennettuja hintoja TEKin jäsenille.</p>
+            <p>Täysjäsenyys sisältää mm. pääsyn tapahtumaan kaikkina tapahtuman päivinä ja oikeuden äänestää Hugo-äänestyksessä. Lisätietoa jäsenyyksien eroista löytyy tapahtuman sivuilta osoitteesta <a href="http://worldcon.ie/">worldcon.ie</a></p>
           </CardText>
           <CardActions style={{ marginLeft: 8, paddingTop: 0 }}>
             <TekMemberTypeList

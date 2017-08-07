@@ -30,7 +30,7 @@ export default class NominationSignature extends React.Component {
     >
       <p>
         You have received this link because you are a member of Worldcon 75 and/or Worldcon 76 in San
-        José and/or Worldcon 77. This is your personal nominations ballot.
+        José and/or Dublin 2019, an Irish Worldcon. This is your personal nominations ballot.
       </p>
       <p>
         Please choose up to five nominees in each category. We recommend that you nominate whatever works and creators

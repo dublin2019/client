@@ -4,17 +4,17 @@ import { CardActions, CardHeader, CardText } from 'material-ui/Card'
 const VoteIntroText = () => (
   <CardText className="vote-intro" style={{ padding: '16px 32px' }}>
     <h3>
-      Thank you for participating in the 2017 Hugo Awards and the John W. Campbell Award!
+      Thank you for participating in the 2019 Hugo Awards and the John W. Campbell Award!
     </h3>
 
     <p>
       The Hugo Award is the leading award for excellence in the field of science fiction and fantasy. The Hugo Awards
       are awarded each year by the World Science Fiction Society (“WSFS”), at the World Science Fiction Convention
       (“Worldcon”). The finalists for the 2017 Hugo Awards and John W. Campbell Award for Best New Writer were
-      announced on Tuesday 4 April 2017.
+      announced on Tuesday 4 April 2019.
     </p>
     <p>
-      The Hugo Awards will be presented at a formal ceremony on Friday 19 August 2019, at Worldcon 77, the 77th World
+      The Hugo Awards will be presented at a formal ceremony on Friday 19 August 2019, at Dublin 2019 - An Irish Worldcon, the 77th World
       Science Fiction Convention, in Helsinki, Finland. We currently plan to continue the recent tradition of
       streaming the ceremony live via the Internet, enabling fans around the world to experience the event.
     </p>
@@ -117,7 +117,7 @@ const VoteIntroText = () => (
     </p>
     <p>
       We ask that voters honor publishers’ and creators’ request that they reserve these copies for their personal use
-      only, and that they do not share these works with non-members of Worldcon 77.
+      only, and that they do not share these works with non-members of Dublin 2019 - An Irish Worldcon.
     </p>
   </CardText>
 );

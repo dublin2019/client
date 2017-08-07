@@ -1,6 +1,6 @@
 /**
  * Select the Hugo Award finalists according to the WSFS constitution, as valid
- * for Worldcon 77 selecting the awards in 2017.
+ * for Dublin 2019 - An Irish Worldcon - selecting the awards in 2019.
  *
  * Uses collections from immutable.js.
  *

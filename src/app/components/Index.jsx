@@ -35,7 +35,7 @@ class Index extends React.Component {
       <MemberCard
         key={key}
         member={member}
-        showHugoActions={hugoCount === 1}
+        showHugoActions={hugoCount === 10}
       />
     ));
   }
