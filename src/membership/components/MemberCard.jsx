@@ -70,7 +70,7 @@ class MemberCard extends React.Component {
         secondaryText="and/or add paper publications"
       />
     ]
-    if (showHugoActions && member.get('can_hugo_vote')) actions.push(
+    /*if (showHugoActions && member.get('can_hugo_vote')) actions.push(
       <Action
         key="hv"
         innerDivStyle={{ paddingLeft: 60 }}
@@ -87,8 +87,8 @@ class MemberCard extends React.Component {
         onTouchTap={() => push(`/hugo/${id}/nominate`)}
         primaryText="Nominate for the Hugo Awards"
       />
-    )
-    if (isWSFSMember(member)) actions.push(
+    )*/
+    /*if (isWSFSMember(member)) actions.push(
       <Action
         key="ss"
         innerDivStyle={{ paddingLeft: 60 }}
@@ -103,7 +103,7 @@ class MemberCard extends React.Component {
         onTouchTap={ () => push(`/exhibition/${id}`) }
         primaryText="Register for the Art Show"
       />
-    )
+    )*/
     return actions
   }
 

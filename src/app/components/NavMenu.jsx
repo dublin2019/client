@@ -36,7 +36,7 @@ const NavMenu = ({ currentMember, handleNav, otherMembers }) => {
   const id = currentMember && currentMember.get('id');
 
   const memberItems = [];
-  if (linkHugoNominations(currentMember, otherMembers)) memberItems.push(<ListItem
+/*  if (linkHugoNominations(currentMember, otherMembers)) memberItems.push(<ListItem
     key="hn"
     leftIcon={<Rocket/>}
     primaryText="Nominate for the Hugo Awards"
@@ -56,7 +56,7 @@ const NavMenu = ({ currentMember, handleNav, otherMembers }) => {
     primaryText="Register for the Art Show"
     style={{ fontSize: 14 }}
     value={`/exhibition/${id}`}
-  />);
+  />);*/
   if (memberItems.length) memberItems.push(<Divider
     key="div"
     inset={true}
