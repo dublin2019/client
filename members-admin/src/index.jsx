@@ -40,7 +40,7 @@ api.GET('user')
   .then(data => store.dispatch({ type: 'SET PAYMENT DATA', data }))
   .catch(e => console.error(e));
 
-const orange = '#fc7c39';
+const orange = '#6abd45';
 const lightBlue = '#3da9d4';
 const darkBlue = '#005383';
 const midGray = '#808080';

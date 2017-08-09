@@ -92,7 +92,7 @@ const VoteIntroText = () => (
       saved. Your current ballot will be emailed to you 30 minutes after you finish modifying it.
     </p>
     <p>
-      If you have questions regarding the ballot, please contact <a href="mailto:hugohelp@worldcon.fi">hugohelp@worldcon.fi</a>.
+      If you have questions regarding the ballot, please contact <a href="mailto:hugohelp@dublin2019.com">hugohelp@dublin2019.com</a>.
     </p>
 
     <h3>Hugo Voter Packet</h3>
@@ -113,7 +113,7 @@ const VoteIntroText = () => (
     </p>
     <p>
       The Hugo Voter Packet will be available for download until the voting deadline specified above. Again, if you
-      have any questions regarding the packet, please contact <a href="mailto:hugohelp@worldcon.fi">hugohelp@worldcon.fi</a>.
+      have any questions regarding the packet, please contact <a href="mailto:hugohelp@dublin2019.com">hugohelp@dublin2019.com</a>.
     </p>
     <p>
       We ask that voters honor publishers’ and creators’ request that they reserve these copies for their personal use

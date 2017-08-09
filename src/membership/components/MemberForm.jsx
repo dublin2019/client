@@ -117,8 +117,8 @@ export default class MemberForm extends React.Component {
               <TextInput { ...inputProps } key="input" path='email' disabled={true} />,
               <div key="hint" style={hintStyle}>
                 To change the email address associated with this membership, please
-                get in touch with us at <a href="mailto:registration@worldcon.fi">
-                registration@worldcon.fi</a>
+                get in touch with us at <a href="mailto:registrar@dublin2019.com">
+                registrar@dublin2019.com</a>
               </div>
           ] }
         </Col>

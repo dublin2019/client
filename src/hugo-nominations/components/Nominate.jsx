@@ -66,7 +66,7 @@ const NominationsHead = ({ active, name, signature }) => (
         Nothing has changed about the mechanics of making nominations this year. You can still choose up to five
         nominees in each category. Your nominations are equally weighted – the order in which you list them has no
         effect on the outcome. There are some changes to the way that nominations are tallied to produce the final
-        ballot; they are summarised <a href="http://www.worldcon.fi/wsfs/hugo/" target="_blank">here</a>.
+        ballot; they are summarised <a href="https://www.dublin2019.com/wsfs/hugo/" target="_blank">here</a>.
       </p>
       <p>
         This year we are trialling a new category, Best Series. If you make nominations for Best Series, it will help us
@@ -91,8 +91,8 @@ const NominationsHead = ({ active, name, signature }) => (
       </p>
       <p>
         If you have difficulties accessing the online ballot, or you have more general questions on the Hugo process,
-        you can e-mail <a href="mailto:hugohelp@worldcon.fi">hugohelp@worldcon.fi</a> for assistance. See <a
-          href="http://www.worldcon.fi/wsfs/hugo/" target="_blank"
+        you can e-mail <a href="mailto:hugohelp@dublin2019.com">hugohelp@worldcon.fi</a> for assistance. See <a
+          href="https://www.dublin2019.com/wsfs/hugo/" target="_blank"
         >here</a> for more information about the Hugo Awards. The full rules for the Hugo Awards are contained in the <a
           href="http://www.wsfs.org/wp-content/uploads/2016/10/WSFS-Constitution-as-of-August-22-2016.pdf"
           target="_blank"

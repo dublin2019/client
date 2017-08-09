@@ -43,8 +43,8 @@ export default class NominationSignature extends React.Component {
       </p>
       <p>
         If you have difficulties accessing the online ballot, or you have more general questions on the Hugo process,
-        you can e-mail <a href="mailto:hugohelp@worldcon.fi">hugohelp@worldcon.fi</a> for assistance. See <a
-        href="http://www.worldcon.fi/wsfs/hugo/" target="_blank">here</a> for more information about the Hugo Awards.
+        you can e-mail <a href="mailto:hugohelp@dublin2019.com">hugohelp@worldcon.fi</a> for assistance. See <a
+        href="https://www.dublin2019.com/wsfs/hugo/" target="_blank">here</a> for more information about the Hugo Awards.
       </p>
       <p>
         Thank you for participating! To start nominating, please enter your name here:

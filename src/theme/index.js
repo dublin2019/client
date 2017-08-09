@@ -4,7 +4,7 @@ import './theme.css'
 import '../img/bg-aurora.jpg'
 import '../img/ursa.png'
 
-export const orange = '#fc7c39';
+export const orange = '#6abd45';
 export const lightBlue = '#3da9d4';
 export const darkBlue = '#005383';
 export const midGray = '#808080';
