@@ -87,8 +87,7 @@ class KeyRequest extends React.Component {
           If your email address is associated with more than one membership that
           is eligible to vote or nominate in the 2019 Hugo Awards, you'll need to
           use the separately emailed Hugo login link to access those services.
-          For further assistance with Hugo nominations, please e-mail
-          {' '}<a href="mailto:hugohelp@dublin2019.com">hugohelp@dublin2019.com</a>.
+          Hugo nominations will open in early 2018.
         </p>
       </div>
     </div>
