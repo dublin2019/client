@@ -87,7 +87,7 @@ export const AddPaperPubs = ({ getDefaultValue, getValue, lc = 'en', onChange, p
             style={{ marginBottom: 4 }}
             { ...inputProps }
           />
-        <div style={hintStyle}>{ppMsg.new_hint()}</div>
+        <div style={hintStyle}><p>{ppMsg.new_hint()}</p><p>{ppMsg.new_hint_accessiblity()}</p></div>
           {hasPaperPubs ? <div style={hintStyle}>{ppMsg.new_hint2()}</div> : null }
       </Col>
       {hasPaperPubs ? (
