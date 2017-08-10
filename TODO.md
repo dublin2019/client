@@ -1,15 +1,5 @@
 https://api.dublin2019.com/new/Child
 
-CSS changes to accommodate for the class set up as follows (likely done in React style={}, or code):
-    color: rgb(128, 128, 128);
-    font-size: 13px;
-    margin-bottom: 24px;
-change to
-    margin: 12px 0 24px;
-
-Autocomplete notice: add margin-bottom: 1em on input[text] fields so they don't hide descriptive texts:
-
-
 
 -We'll need to check this against an official ID at the con, but otherwise it'll stay confidential.
 +We'll need you to bring something with your legal name on it to pick up your badge at con, but otherwise it'll stay confidential.
