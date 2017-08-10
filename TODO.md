@@ -1,10 +1,6 @@
 https://api.dublin2019.com/new/Child
 
 
--We'll need to check this against an official ID at the con, but otherwise it'll stay confidential.
-+We'll need you to bring something with your legal name on it to pick up your badge at con, but otherwise it'll stay confidential.
-
-
 {these two are on the same line}
 
 -Public First Name
