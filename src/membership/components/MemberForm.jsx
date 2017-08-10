@@ -98,6 +98,45 @@ export default class MemberForm extends React.Component {
       onChange: this.onChange,
       tabIndex
     }
+
+    // TODO: once 'zipcode' and 'address' exists in the backend, toggle this:
+    const haveAddressAndZipCode = false;
+    const addressFields = haveAddressAndZipCode ? (<div>
+      <Row>
+        <Col xs={12}>
+          <TextInput { ...inputProps } path='address' />
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={6}>
+          <TextInput { ...inputProps } path='city' />
+        </Col>
+        <Col xs={12} sm={6}>
+          <TextInput { ...inputProps } path='state' />
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={6}>
+          <TextInput { ...inputProps } path='zipcode' />
+        </Col>
+        <Col xs={12} sm={6}>
+          <TextInput { ...inputProps } path='country' />
+        </Col>
+      </Row>
+    </div>) : (
+      <Row>
+        <Col xs={12} sm={4}>
+          <TextInput { ...inputProps } path='city' />
+        </Col>
+        <Col xs={12} sm={4}>
+          <TextInput { ...inputProps } path='state' />
+        </Col>
+        <Col xs={12} sm={4}>
+          <TextInput { ...inputProps } path='country' />
+        </Col>
+      </Row>
+    );
+
     return <form>
       <Row>
         <Col xs={12} sm={6}>
@@ -132,18 +171,7 @@ export default class MemberForm extends React.Component {
         </Col>
         <Col xs={12} style={hintStyle}>{this.msg('public_name_hint')}</Col>
       </Row>
-      <Row>
-        <Col xs={12} sm={4}>
-          <TextInput { ...inputProps } path='city' />
-        </Col>
-        <Col xs={12} sm={4}>
-          <TextInput { ...inputProps } path='state' />
-        </Col>
-        <Col xs={12} sm={4}>
-          <TextInput { ...inputProps } path='country' />
-        </Col>
-        <Col xs={12} style={hintStyle}>{this.msg('location_hint')}</Col>
-      </Row>
+      {{ addressFields }}
       {!newMember ? (
         <AddPaperPubs
           prices={prices}
