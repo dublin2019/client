@@ -12,7 +12,7 @@ import { paperPubsIsValid, AddPaperPubs, EditPaperPubs } from './paper-pubs'
 export const hintStyle = {
   color: midGray,
   fontSize: 13,
-  marginBottom: 24
+  margin: '12px 0 24px' // sans the top margin, chrome autocomplete occludes us
 }
 
 export default class MemberForm extends React.Component {
