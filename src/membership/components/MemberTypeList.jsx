@@ -16,6 +16,7 @@ export const memberTypeData = {
   Adult: {
     primary: 'Adult membership',
     daypass: 'Adult day pass (from €25/day)',
+    secondary: 'Born on or after 15 August 1993',
     icon: <DirectionsWalk/>
   },
   FirstWorldcon: {
@@ -26,18 +27,18 @@ export const memberTypeData = {
   YoungAdult: {
     primary: 'Young Adult membership',
     daypass: 'Young Adult day pass (from €15/day)',
-    secondary: 'Born on or after 15 August 1994',
+    secondary: 'Born between 16 Aug 1993 and 15 Aug 2009 inclusive',
     icon: <DirectionsRun/>
   },
   Child: {
     primary: 'Child membership',
     daypass: 'Child day pass (from €10/day)',
-    secondary: 'Born on or after 14 August 2006',
+    secondary: 'Born between 16 Aug 2009 and 15 Aug 2013 inclusive',
     icon: <SmilingFace/>
   },
   Infant: {
     primary: 'Infant membership',
-    secondary: 'Born on or after 14 August 2013',
+    secondary: 'Born on or after 16 August 2013',
     icon: <ChildFriendly/>
   },
   Supporter: {
@@ -46,7 +47,7 @@ export const memberTypeData = {
   },
   Upgrade: {
     primary: 'Upgrade membership',
-    secondary: 'and/or add paper publications',
+    secondary: 'and/or add paper progress reports',
     icon: <ThumbUp/>
   }
 };
@@ -82,7 +83,7 @@ export default class MemberTypeList extends React.Component {
         : !prevType ? `${primary} (free)`
         : canAddPaperPubs ? 'No upgrade' : 'No upgrade available'
     const secondaryText = !prevType || amount ? secondary
-        : canAddPaperPubs ? 'Just add paper publications' : 'Already has paper publications';
+        : canAddPaperPubs ? 'Just add paper progress reports' : 'Already has paper progress reports';
     return {
       disabled: isDisabled,
       innerDivStyle: { paddingLeft: 60 },

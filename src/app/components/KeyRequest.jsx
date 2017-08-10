@@ -33,9 +33,14 @@ class KeyRequest extends React.Component {
         <CardText style={{ marginTop: -16 }}>
           <div className="html-container">
             <p>
-              To access our services, you'll need to use a login link sent to you
-              via email. To request a new login link, please enter your email
-              address below, and it'll be sent to you. The address you enter will
+              People that voted in Site Selection in Helsinki or were
+              Dublin BID Presupporters / Backers / Friends / Super Friends,
+              or are members of Dublin 2019 Worldcon,
+              will need to use a login link sent to you via email.
+            </p>
+            <p>
+              To request a new login link, please enter your email address below,
+              and it'll be sent to you. The address you enter will
               need to match the one we have in our database for you; it's the one
               that you provided when signing up, and at which you've previously
               received messages from us.
@@ -72,7 +77,7 @@ class KeyRequest extends React.Component {
           </form>
         </CardText>
       </Card>
-      <div className="bg-text" style={{ fontSize: 14, marginBottom: 20, padding: '0 16px', color: '#6abd45' }}>
+      <div className="bg-text" style={{ fontSize: 14, margin: '12px 0 20px', padding: '2px 16px', color: '#6abd45', backgroundColor: 'rgba(0, 0, 0, 0.67)' }}>
         <p>
           If you're not able to enter a valid address, or if you do not receive
           the login link within 30 minutes or so, please get in touch with us at
@@ -82,8 +87,7 @@ class KeyRequest extends React.Component {
           If your email address is associated with more than one membership that
           is eligible to vote or nominate in the 2019 Hugo Awards, you'll need to
           use the separately emailed Hugo login link to access those services.
-          For further assistance with Hugo nominations, please e-mail
-          {' '}<a href="mailto:hugohelp@dublin2019.com">hugohelp@dublin2019.com</a>.
+          Hugo nominations will open in early 2018.
         </p>
       </div>
     </div>

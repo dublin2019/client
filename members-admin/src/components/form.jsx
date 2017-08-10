@@ -108,7 +108,7 @@ const PaperPubsCheckbox = ({ getDefaultValue, getValue, onChange }) => {
   const path = ['paper_pubs'];
   return <Checkbox
     style={{ display: 'inline-block', width: '256px', marginLeft: '24px', marginTop: '37px', verticalAlign: 'top' }}
-    label='Add paper publications'
+    label='Add paper progress reports'
     checked={!!getValue(path)}
     disabled={!!getDefaultValue(path)}
     onCheck={ (ev, checked) => onChange(path, checked ? Member.emptyPaperPubsMap : null) }
