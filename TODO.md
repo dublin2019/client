@@ -2,12 +2,6 @@ https://api.dublin2019.com/ index page:
 
 Change:
 
-Inject new tag before:
-+<p>People that voted in Site Selection in Helsinki or were Dublin BID Presupporters / Backers / Friends / Super Friends, or are members of Dublin 2019 Worldcon, will need to use a login link sent to you via email.</p>
-
--To access our services, you'll need to use a login link sent to you via email. To request a new login link, please enter your email address below, and it'll be sent to you. The address you enter will need to match the one we have in our database for you; it's the one that you provided when signing up, and at which you've previously received messages from us.
-+To request a new login link, please enter your email address below, and it'll be sent to you. The address you enter will need to match the one we have in our database for you; it's the one that you provided when signing up, and at which you've previously received messages from us.
-
 .bg-text style attribute additions for the div around the two <p>:s "If you're not able to enter a valid address, or if you do not receive the login link within 30 minutes or so, please get in touch with us at registrar@dublin2019.com and we'll help you get sorted." + below <p>:
 {
 padding: 0.5em 16px;
