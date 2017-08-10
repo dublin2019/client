@@ -67,7 +67,7 @@ class MemberCard extends React.Component {
         leftIcon={<ThumbUp style={{ top: 12 }}/>}
         onTouchTap={() => push(`/upgrade/${id}`)}
         primaryText="Upgrade membership"
-        secondaryText="and/or add paper publications"
+        secondaryText="and/or add paper progress reports"
       />
     ]
     /*if (showHugoActions && member.get('can_hugo_vote')) actions.push(
