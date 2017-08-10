@@ -2,22 +2,6 @@ https://api.dublin2019.com/ index page:
 
 Change:
 
-Young Adult membership (€100)
--Born on or after 15 August 1994
-+Born between 16 Aug 1993 and 15 Aug 2009 inclusive
-
-Adult membership (€160)
--
-+Born on or after 15 August 1993
-
-Child membership (€60)
--Born on or after 14 August 2006
-+Born between 16 Aug 2009 and 15 Aug 2013 inclusive
-
-Infant membership (€5)
--Born on or after 14 August 2013
-+Born on or after 16 August 2013
-
 Inject new tag before:
 +<p>People that voted in Site Selection in Helsinki or were Dublin BID Presupporters / Backers / Friends / Super Friends, or are members of Dublin 2019 Worldcon, will need to use a login link sent to you via email.</p>
 
