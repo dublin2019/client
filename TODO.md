@@ -1,26 +1,3 @@
-https://api.dublin2019.com/ index page:
-
-Change:
-
-.bg-text style attribute additions for the div around the two <p>:s "If you're not able to enter a valid address, or if you do not receive the login link within 30 minutes or so, please get in touch with us at registrar@dublin2019.com and we'll help you get sorted." + below <p>:
-{
-padding: 0.5em 16px;
-margin-top: 1em;
-background-color: rgba(0,0,0,0.66);
-}
-
--For further assistance with Hugo nominations, please e-mail hugohelp@dublin2019.com.
-+Hugo nominations will open in early 2018.
-
-
-
-To access our services, you'll need to use a login link sent to you via email. To request a new login link, please enter your email address below, and it'll be sent to you. The address you enter will need to match the one we have in our database for you; it's the one that you provided when signing up, and at which you've previously received messages from us. 
-
-
-
-
-
-
 https://api.dublin2019.com/new/Child
 
 CSS changes to accommodate for the class set up as follows (likely done in React style={}, or code):
