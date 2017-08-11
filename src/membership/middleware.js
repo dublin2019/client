@@ -55,7 +55,7 @@ export default ({ dispatch }) => (next) => (action) => {
       api.GET('logout')
         .then(() => {
           next(action);
-          dispatch(push('/'));
+          dispatch(push(localStorage.logoutPath || '/'));
         })
         .catch(handleError);
     } return;

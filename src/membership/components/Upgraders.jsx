@@ -42,6 +42,7 @@ class Upgraders extends React.Component {
     const isLoggedIn = !!(people && people.size)
     const upgradePath = people && people.size === 1
       ? `/upgrade/${people.first().get('id')}` : '/upgrade/'
+    localStorage.logoutPath = '/upgraders'; // return here, not to /
     return <Row style={{ marginBottom: -24 }}>
       <Col xs={12} sm={6} lg={4} lgOffset={2}>
         {isLoggedIn ? this.memberCards : <InstaLoginHack/>}
