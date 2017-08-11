@@ -79,6 +79,7 @@ export default class AppRouter extends Route {
     const { history } = this.props
     return (
       <Router history={history}>
+        <Route path="/upgraders" component={Upgraders} />
         <Route path="/login/:email/:key" onEnter={this.doLogin} />
         <Route path="/login/:email/:key/:id" onEnter={this.doLogin} />
         <Route path="/" component={App} onChange={this.scrollUpOnChange} onEnter={this.checkAuth} >
