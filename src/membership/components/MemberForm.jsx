@@ -99,44 +99,6 @@ export default class MemberForm extends React.Component {
       tabIndex
     }
 
-    // TODO: once 'postcode' and 'address' exists in the backend, toggle this:
-    const haveAddressAndPostcode = !!localStorage.haveAddressAndPostcode;
-    const addressFields = haveAddressAndPostcode ? (<div>
-      <Row>
-        <Col xs={12}>
-          <TextInput { ...inputProps } path='address' />
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={12} sm={6}>
-          <TextInput { ...inputProps } path='city' />
-        </Col>
-        <Col xs={12} sm={6}>
-          <TextInput { ...inputProps } path='state' />
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={12} sm={6}>
-          <TextInput { ...inputProps } path='postcode' />
-        </Col>
-        <Col xs={12} sm={6}>
-          <TextInput { ...inputProps } path='country' />
-        </Col>
-      </Row>
-    </div>) : (
-      <Row>
-        <Col xs={12} sm={4}>
-          <TextInput { ...inputProps } path='city' />
-        </Col>
-        <Col xs={12} sm={4}>
-          <TextInput { ...inputProps } path='state' />
-        </Col>
-        <Col xs={12} sm={4}>
-          <TextInput { ...inputProps } path='country' />
-        </Col>
-      </Row>
-    );
-
     return <form>
       <Row>
         <Col xs={12} sm={6}>
@@ -176,7 +138,27 @@ export default class MemberForm extends React.Component {
           <TextInput { ...inputProps } path='badge_text' />
         </Col>
       </Row>
-      { addressFields }
+      <Row>
+        <Col xs={12}>
+          <TextInput { ...inputProps } path='address' />
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={6}>
+          <TextInput { ...inputProps } path='city' />
+        </Col>
+        <Col xs={12} sm={6}>
+          <TextInput { ...inputProps } path='state' />
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={6}>
+          <TextInput { ...inputProps } path='postcode' />
+        </Col>
+        <Col xs={12} sm={6}>
+          <TextInput { ...inputProps } path='country' />
+        </Col>
+      </Row>
       {!newMember ? (
         <AddPaperPubs
           prices={prices}
