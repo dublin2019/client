@@ -5,10 +5,10 @@ import { push } from 'react-router-redux'
 const { Col, Row } = require('react-flexbox-grid');
 const ImmutablePropTypes = require('react-immutable-proptypes');
 
-import { setScene } from '../actions/app'
+import { setScene } from '../../app/actions/app'
 import InstaLoginHack from './InstaLoginHack'
-import MemberCard from '../../membership/components/MemberCard'
-import NewMemberCard from '../../membership/components/NewMemberCard'
+import MemberCard from './MemberCard'
+import NewMemberCard from './NewMemberCard'
 
 class Upgraders extends React.Component {
 

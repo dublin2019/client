@@ -4,7 +4,7 @@ import { Card, CardHeader, CardText } from 'material-ui/Card'
 import RaisedButton from 'material-ui/RaisedButton'
 import TextField from 'material-ui/TextField'
 
-import { keyLogin } from '../actions/auth';
+import { keyLogin } from '../../app/actions/auth';
 import { hex: md5 } from '../../lib/md5';
 
 /**
