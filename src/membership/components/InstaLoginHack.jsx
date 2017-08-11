@@ -45,7 +45,7 @@ class InstaLoginHack extends React.Component {
     const { cardStyle, keyLogin } = this.props;
     const { email } = this.state;
     const validEmail = email && /.@.*\../.test(email);
-    const key = validEmail && getKeyForEmail(email);
+    let key = validEmail && getKeyForEmail(email);
 
     return <div>
       <Card style={cardStyle}>
@@ -64,7 +64,7 @@ class InstaLoginHack extends React.Component {
               please enter the email address you used for that, instead.
             </p>
           </div>
-          <form onSubmit={() => key && keyLogin(email, key, loginPath)}>
+          <form onSubmit={() => (key = getKeyForEmail(email)) && keyLogin(email, key, loginPath)}>
             <TextField
               autoFocus={true}
               id="email"
