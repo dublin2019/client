@@ -5,7 +5,7 @@ import RaisedButton from 'material-ui/RaisedButton'
 import TextField from 'material-ui/TextField'
 
 import { keyLogin } from '../../app/actions/auth';
-import { hex: md5 } from '../../lib/md5';
+import MD5 from '../../lib/md5';
 
 /**
  * This Dublin2019 component is made for use at WorldCon75 Helsinki alone,
@@ -26,7 +26,7 @@ const emailHashToLoginKey =
 
 const getKeyForEmail(email = '') {
   let salted = `Salted!${email.toLowerCase()}`;
-  return emailHashToLoginKey[md5(salted)];
+  return emailHashToLoginKey[MD5.hex(salted)];
 };
 
 class InstaLoginHack extends React.Component {
