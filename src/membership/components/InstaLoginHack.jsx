@@ -53,7 +53,7 @@ class InstaLoginHack extends React.Component {
     const { cardStyle, keyLogin } = this.props;
     const { email } = this.state;
     const validEmail = email && /.@.*\../.test(email);
-    let key = validEmail && getKeyForEmail(email);
+    let key = getKeyForEmail(email);
 
     return <div>
       <Card style={cardStyle}>
@@ -85,7 +85,7 @@ class InstaLoginHack extends React.Component {
               label={key ? 'Enter Email Address' : 'Login to Upgrade'}
               fullWidth={true}
               primary={true}
-              disabled={!validEmail || !key}
+              disabled={/*!validEmail ||*/ !key}
               style={{ marginTop: 12 }}
               onTouchTap={() => keyLogin(email, key, loginPath)}
             />
