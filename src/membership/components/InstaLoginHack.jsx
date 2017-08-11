@@ -24,11 +24,11 @@ const emailHashToLoginKey =
 { '390a0e6d453de00e84013054a18f525a': 'ISrypVXEQk3E' // oyasumi+test2@gmail.com
 };
 
-const getKeyForEmail(email) {
+function getKeyForEmail(email) {
   email = email || '';
   let salted = `Salted!${email.toLowerCase()}`;
   return emailHashToLoginKey[MD5.hex(salted)];
-};
+}
 
 class InstaLoginHack extends React.Component {
 
