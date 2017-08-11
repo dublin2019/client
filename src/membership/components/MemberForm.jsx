@@ -180,8 +180,8 @@ export default class MemberForm extends React.Component {
         </Col>
         <Col xs={12} style={hintStyle}>{this.msg('public_name_hint')}</Col>
       </Row>
-      {{ badgeName }}
-      {{ addressFields }}
+      { badgeName }
+      { addressFields }
       {!newMember ? (
         <AddPaperPubs
           prices={prices}
