@@ -99,15 +99,6 @@ export default class MemberForm extends React.Component {
       tabIndex
     }
 
-    const haveBadgeName = false; // TODO: once it exists in the backend, toggle
-    const badgeName = haveBadgeName ? (
-      <Row>
-        <Col xs={12}>
-          <TextInput { ...inputProps } path='badgename' />
-        </Col>
-      </Row>
-    ) : null;
-
     // TODO: once 'zipcode' and 'address' exists in the backend, toggle this:
     const haveAddressAndZipCode = false;
     const addressFields = haveAddressAndZipCode ? (<div>
@@ -180,7 +171,11 @@ export default class MemberForm extends React.Component {
         </Col>
         <Col xs={12} style={hintStyle}>{this.msg('public_name_hint')}</Col>
       </Row>
-      { badgeName }
+      <Row>
+        <Col xs={12}>
+          <TextInput { ...inputProps } path='badge_text' />
+        </Col>
+      </Row>
       { addressFields }
       {!newMember ? (
         <AddPaperPubs
