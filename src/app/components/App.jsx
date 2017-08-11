@@ -116,7 +116,7 @@ class App extends React.Component {
               title={title}
             />
           ] : (
-            <h1 style={{ paddingTop: 24 }}>
+            <h1 style={{ paddingBottom: 10, backgroundColor: 'rgba(0,0,0,0.67)' }}>
               <Worldcon77 className="h1-logo" />
               {title}
             </h1>
