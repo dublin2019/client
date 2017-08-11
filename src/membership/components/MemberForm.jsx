@@ -99,18 +99,9 @@ export default class MemberForm extends React.Component {
       tabIndex
     }
 
-    const haveBadgeName = false; // TODO: once it exists in the backend, toggle
-    const badgeName = haveBadgeName ? (
-      <Row>
-        <Col xs={12}>
-          <TextInput { ...inputProps } path='badgename' />
-        </Col>
-      </Row>
-    ) : null;
-
-    // TODO: once 'zipcode' and 'address' exists in the backend, toggle this:
-    const haveAddressAndZipCode = false;
-    const addressFields = haveAddressAndZipCode ? (<div>
+    // TODO: once 'postcode' and 'address' exists in the backend, toggle this:
+    const haveAddressAndPostcode = !!localStorage.haveAddressAndPostcode;
+    const addressFields = haveAddressAndPostcode ? (<div>
       <Row>
         <Col xs={12}>
           <TextInput { ...inputProps } path='address' />
@@ -126,7 +117,7 @@ export default class MemberForm extends React.Component {
       </Row>
       <Row>
         <Col xs={12} sm={6}>
-          <TextInput { ...inputProps } path='zipcode' />
+          <TextInput { ...inputProps } path='postcode' />
         </Col>
         <Col xs={12} sm={6}>
           <TextInput { ...inputProps } path='country' />
@@ -180,8 +171,12 @@ export default class MemberForm extends React.Component {
         </Col>
         <Col xs={12} style={hintStyle}>{this.msg('public_name_hint')}</Col>
       </Row>
-      {{ badgeName }}
-      {{ addressFields }}
+      <Row>
+        <Col xs={12}>
+          <TextInput { ...inputProps } path='badge_text' />
+        </Col>
+      </Row>
+      { addressFields }
       {!newMember ? (
         <AddPaperPubs
           prices={prices}
