@@ -1,3 +1,7 @@
 .*
 dist/
 node_modules/
+/emails.all
+/emails.csv
+/emails.txt
+/instaloginkeys.json
