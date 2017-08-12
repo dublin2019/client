@@ -34,8 +34,5 @@ emails.all: emails.txt emails.csv Makefile
 	(awk '/[a-z]/ {print $$1 "," $$NF}' < $< ; cat emails.csv) | sort | uniq > $@
 	cp $@ emails.csv
 
-instaloginkeys.json: emails.all make-emailHashToLoginKey.pike Makefile
-	./make-emailHashToLoginKey.pike < $< > $@
-
-instaloginkeys.js: instaloginkeys.json Makefile
-	(/bin/echo -n 'export default ' ; cat $<) > $@
+instaloginkeys.js: emails.all make-emailHashToLoginKey.js Makefile
+	npm run build:instaloginkeys < $<

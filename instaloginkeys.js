@@ -1,4 +1,5 @@
-export default { "0a76634aea3c": "nnmzQXaelHg0"
+export default
+{ "0a76634aea3c": "nnmzQXaelHg0"
 , "2cec2a590c51": "anMO7VSfr2hn"
 , "f4588d71951d": "REHonzd76LqV"
 , "c6222130e88f": "T0oLOAF8Gvul"
