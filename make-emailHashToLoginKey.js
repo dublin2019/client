@@ -5,30 +5,28 @@ import split from 'split';
 import MD5 from './src/lib/md5';
 
 const salt = 'Salted!';
-const truncateToChars = 12; // max 32
+const truncateTo = 12; // max 32 chars in a hex MD5 hash
+const trailing = false;
 
 const keys = {};
 
-process.stdin.pipe(split(null, null, { trailing: false }))
-  .on('data', processCSVLine)
-  .on('end', writeKeys);
+let separator = `export default
+{`;
 
-function processCSVLine(line) {
-  let [email, login] = line.trim().split(/\s*,\s*/g);
-  if (!email || !login) {
-    console.warn(`missing email or login in line: ${JSON.stringify(line)}`);
-    return;
-  }
-  const hash = MD5.hex(`${salt}${email.toLowerCase()}`).slice(0, truncateToChars);
-  keys[hash] = login;
-}
-
-function writeKeys() {
-  console.log('export default');
-  let separator = '{';
-  for (let hash in keys) {
-    console.log(`${separator} "${hash}": "${keys[hash]}"`);
+process.stdin.pipe(split(null, null, { trailing }))
+  .on('data', function processCSVLine(line) {
+    let [email, key] = line.trim().split(/\s*,\s*/g);
+    if (!email || !key) {
+      console.warn(`missing email or key in line: ${JSON.stringify(line)}`);
+      return;
+    }
+    const hash = MD5.hex(`${salt}${email.toLowerCase()}`).slice(0, truncateTo);
+    if (1 !== (keys[hash] = 1 + (keys[hash] || 0))) {
+      console.warn(`Duplicate key ${key} for email ${email}`);
+    }
+    console.log(`${separator} "${hash}": "${key}"`);
     separator = ',';
-  }
-  console.log('};');
-}
+  })
+  .on('end', function() {
+    console.log('}');
+  });
