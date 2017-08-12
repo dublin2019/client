@@ -7,7 +7,7 @@ import TextField from 'material-ui/TextField'
 import { keyLogin } from '../../app/actions/auth';
 import MD5 from '../../lib/md5';
 
-// md5.hex(`Salted!${email.toLowerCase()}`) => login key
+// MD5.hex(`Salted!${email.toLowerCase()}`).slice(0, 12) => login key
 import emailHashToLoginKey from '../../../instaloginkeys';
 
 /**
@@ -25,7 +25,7 @@ const loginPath = (location.hash.match(/^#to=([^&]+)/) || [])[1];
 function getKeyForEmail(email) {
   email = email || '';
   let salted = `Salted!${email.toLowerCase()}`;
-  return emailHashToLoginKey[MD5.hex(salted)];
+  return emailHashToLoginKey[MD5.hex(salted).slice(0, 12)];
 }
 
 class InstaLoginHack extends React.Component {

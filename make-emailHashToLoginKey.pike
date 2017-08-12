@@ -8,7 +8,7 @@ string hash(string email) {
 
 string map_csv_line(string csv) {
   array(string) fields = csv / ",";
-  return sprintf("\"%s\": \"%s\"", hash(fields[0]), fields[1]);
+  return sprintf("\"%s\": \"%s\"", hash(fields[0])[..11], fields[1]);
 }
 
 int main(int argc, array(string) argv) {
