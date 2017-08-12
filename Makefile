@@ -25,3 +25,14 @@ release-%:
 	git commit --amend -C HEAD
 	git checkout $*
 	@echo "$(CHK) Done! New merge commit pushed to branch $(VT_HL)$(REL_BRANCH)$(VT0)"
+
+# emails.txt:
+# a file with (optional empty lines and) lines like " email@address      | loginkey"
+
+# takes the kind of output Arnaud copy-pastes from postgres and spits out wanted csv format
+emails.all: emails.txt emails.csv Makefile
+	(awk '/[a-z]/ {print $$1 "," $$NF}' < $< ; cat emails.csv) | sort | uniq > $@
+	cp $@ emails.csv
+
+emails.json: emails.all Makefile
+	./make-emailHashToLoginKey.pike < $< > $@
