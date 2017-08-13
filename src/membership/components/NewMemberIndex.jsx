@@ -30,6 +30,24 @@ class NewMemberIndex extends React.Component {
 
   render() {
     const { prices, push } = this.props;
+    // slimmed-down /new page (from phone nav) without day passes, et cetera:
+    return <Row style={{ marginBottom: -24 }}>
+      <Col
+        xs={12}
+        sm={6}
+        md={5} mdOffset={1}
+        lg={4} lgOffset={2}
+        style={{ paddingLeft: '0.75rem', paddingRight: '0.75rem' }}
+      >
+        <NewMemberCard
+          category="all"
+          expandable={true}
+          onSelectType={(type) => push(`/new/${type}`)}
+          prices={prices}
+        />
+      </Col>
+    </Row>;
+
     return <Row style={{ marginBottom: -24 }}>
       <Col
         xs={12}
