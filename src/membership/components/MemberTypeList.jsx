@@ -27,13 +27,13 @@ export const memberTypeData = {
   YoungAdult: {
     primary: 'Young Adult membership',
     daypass: 'Young Adult day pass (from €15/day)',
-    secondary: 'Born between 16 Aug 1993 and 15 Aug 2009 inclusive',
+    secondary: 'Born between 16 Aug 1993 and 15 Aug 2006 inclusive',
     icon: <DirectionsRun/>
   },
   Child: {
     primary: 'Child membership',
     daypass: 'Child day pass (from €10/day)',
-    secondary: 'Born between 16 Aug 2009 and 15 Aug 2013 inclusive',
+    secondary: 'Born between 16 Aug 2006 and 15 Aug 2013 inclusive',
     icon: <SmilingFace/>
   },
   Infant: {
