@@ -55,7 +55,9 @@ export default ({ dispatch }) => (next) => (action) => {
       api.GET('logout')
         .then(() => {
           next(action);
-          dispatch(push(localStorage.logoutPath || '/'));
+          const logoutTo = localStorage.logoutPath || '/';
+          dispatch(push(logoutTo));
+          delete localStorage.logoutPath;
         })
         .catch(handleError);
     } return;
