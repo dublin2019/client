@@ -26,7 +26,7 @@ const contents = {
       </p>
     </div>,
     memberships: [
-      'FirstWorldcon', 'YoungAdult', 'Adult', '_divider',
+      'Adult', 'YoungAdult', 'FirstWorldcon', '_divider',
       'Child', 'Infant', '_divider',
       'Supporter'
     ]
