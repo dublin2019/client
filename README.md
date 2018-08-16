@@ -6,6 +6,20 @@ These are the front-end clients used by the Dublin 2019 Worldcon Bid,
 implemented as single-page react + redux apps. For the back-end code, please see
 [dublin2019/api](https://github.com/dublin2019/api).
 
+## Upgrader kiosks (the blue dell computers)
+
+At the convention, the e-mail login flow was cumbersome and failure prone,
+so we hacked up a custom one-off flow to run on the few upgrade kiosks,
+where a kiosk-mode browser tied to https://api.dublin2019.com/upgraders
+lets people log on their by e-mail alone from static email dumps we caught
+from the members table, lowercased, salted, hashed and truncated for size
+(and to avoid people walking off with a list of all member email addresses).
+
+It doesn't talk to any api server for this data – to reuse it as is,
+either drop an `email,logintoken` csv into `emails.csv` in the root dir
+or a ` email      | logintoken` paste into `emails.txt`, and run
+`make instaloginkeys.js`, commit, push, merge, and publish it to the site
+(`npm run build:deploy`, if all you did was to change js, such as this).
 
 ### Getting Started
 
