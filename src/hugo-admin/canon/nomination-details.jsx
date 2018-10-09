@@ -82,7 +82,7 @@ class NominationDetails extends React.Component {
         dataKey="category"
         key="category"
         label="Category"
-        width={80}
+        width={120}
       />
     )
     const data = this.fields.map(key => (

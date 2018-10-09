@@ -64,27 +64,21 @@ const NominationsHead = ({ active, name, signature }) => (
         </p>
       ) : null}
       <p>
-        Thank you for participating in the 2019 Hugo Awards, 1944 Retro Hugo Awards, John W.
+        Thank you for participating in the 2019 Hugo Awards, 1943 Retro Hugo Awards, John W.
         Campbell Award and Lodestar Award! Please choose up to five eligible candidates in each
         category. We recommend that you nominate whatever works and creators you
-        have personally read or seen that were your favorites from 2018 (or 1944 for the Retro Hugos).
+        have personally read or seen that were your favorites from 2018 (or 1943 for the Retro Hugos).
       </p>
       <p>
-        The deadline for nominations is Friday March 15th, 2019 at 11:59pm GMT
+        The deadline for nominations is Friday March 15th, 2019 at 11:59pm PDT (GMT+9)
         You can make as many changes as you
         like up to your nomination ballot until then. Your current ballot will
         be emailed to you an hour after you stop making changes to it.
       </p>
       <p>
-        Nothing has changed about the mechanics of making nominations this year.
-        You can still choose up to five nominees in each category. Your
+        You can choose up to five nominees in each category. Your
         nominations are equally weighted – the order in which you list them has
-        no effect on the outcome. There are some changes to the way that
-        nominations are tallied to produce the final ballot; they are summarised{' '}
-        <a href="http://www.dublin2019.com/wsfs/hugo/" target="_blank">
-          here
-        </a>
-        .
+        no effect on the outcome. 
       </p>
       <p>
         “No Award” will appear automatically in every single category on the

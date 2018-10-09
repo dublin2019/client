@@ -30,8 +30,8 @@ export default class NominationSignature extends React.Component {
         open={open}
       >
         <p>
-          You have received this link because you are a member of Worldcon 76 in San Jos&eacute;, 
-          Dublin 2019, an Irish Worldcon, and/or CoNZealand. This is your personal
+          You have received this link because you are a member of Worldcon 76 in San Jos&eacute; 
+           and/or Dublin 2019, an Irish Worldcon. This is your personal
           nominations ballot.
         </p>
         <p>
@@ -40,7 +40,7 @@ export default class NominationSignature extends React.Component {
           seen that were your favorites from 2018.
         </p>
         <p>
-          The deadline for nominations is Friday March 15th, 2019 at 11:59pm GMT.
+          The deadline for nominations is Friday March 15th, 2019 at 11:59pm PDT (GMT+9).
           You can make as many changes as you
           like up until then. Your current ballot will be emailed to you an hour
           after you stop making changes.
