@@ -10,7 +10,7 @@ import Snackbar from 'material-ui/Snackbar'
 import { setScene } from '../../app/actions/app'
 import { ConfigConsumer } from '../../lib/config-context'
 import { setNominator, clearNominationError } from '../actions'
-import { categoryInfo } from '../constants'
+import { categoryRetroInfo } from '../constants'
 
 import NominationCategory from './NominationCategory'
 import NominationSignature from './NominationSignature'
@@ -64,10 +64,10 @@ const NominationsHead = ({ active, name, signature }) => (
         </p>
       ) : null}
       <p>
-        Thank you for participating in the 2019 Hugo Awards, John W.
-        Campbell Award and Lodestar Award! Please choose up to five eligible candidates in each
+        Thank you for participating in the 1943 Retro Hugo Awards! 
+        Please choose up to five eligible candidates in each
         category. We recommend that you nominate whatever works and creators you
-        have personally read or seen that were your favorites from 2018.
+        have personally read or seen that were your favorites from 1943.
       </p>
       <p>
         The deadline for nominations is Friday March 15th, 2019 at 11:59pm PDT (GMT+9)
@@ -125,7 +125,7 @@ const NominationsHead = ({ active, name, signature }) => (
   </Row>
 )
 
-class Nominate extends React.Component {
+class NominateRetro extends React.Component {
   static propTypes = {
     id: PropTypes.number.isRequired,
     person: ImmutablePropTypes.map,
@@ -146,7 +146,7 @@ class Nominate extends React.Component {
   }
 
   componentDidMount() {
-    this.props.setScene({ title: 'Hugo Nominations', dockSidebar: false })
+    this.props.setScene({ title: 'Retro Hugo Nominations', dockSidebar: false })
   }
 
   render() {
@@ -169,7 +169,7 @@ class Nominate extends React.Component {
               />
               <Row>
                 <Col xs={10} xsOffset={1} lg={8} lgOffset={2}>
-                  {Object.keys(categoryInfo).map(category => (
+                  {Object.keys(categoryRetroInfo).map(category => (
                     <NominationCategory
                       active={active}
                       category={category}
@@ -217,4 +217,6 @@ export default connect(
     setNominator,
     setScene
   }
-)(Nominate)
+)(NominateRetro)
+
+

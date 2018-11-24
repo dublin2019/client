@@ -49,7 +49,16 @@ const HugoNominateAction = props => (
   <HugoAction
     attrName="hugo_nominator"
     getPath={id => `/hugo/nominate/${id}`}
-    primaryText="Nominate for the Hugo Awards"
+    primaryText="Nominate for the Main Hugo Awards"
+    {...props}
+  />
+)
+
+const HugoNominateRetroAction = props => (
+  <HugoAction
+    attrName="hugo_nominator"
+    getPath={id => `/hugo/nominate-retro/${id}`}
+    primaryText="Nominate for the Retro Hugo Awards"
     {...props}
   />
 )
@@ -171,6 +180,7 @@ const MemberActions = ({ member }) => (
           <UpgradeAction member={member} paidPaperPubs={paid_paper_pubs} />
           <BarcodeAction attr={attr} member={member} />
           <HugoNominateAction getMemberAttr={getMemberAttr} member={member} />
+          <HugoNominateRetroAction getMemberAttr={getMemberAttr} member={member} />
           <HugoVoteAction getMemberAttr={getMemberAttr} member={member} />
           <SiteSelectionTokenAction attr={attr} />
           <SlackInviteAction attr={attr} />

@@ -6,6 +6,7 @@ import { keyLogin, tryLogin } from './app/actions/auth'
 import App from './app/components/App'
 import Index from './app/components/Index'
 import Nominate from './hugo-nominations/components/Nominate'
+import NominateRetro from './hugo-nominations/components/NominateRetro'
 import Vote from './hugo-votes'
 import NewDaypassForm from './membership/components/NewDaypassForm'
 import NewMemberForm from './membership/components/NewMemberForm'
@@ -65,6 +66,11 @@ export default class AppRouter extends Route {
               path="nominate/:id"
               onEnter={this.requireAuth}
               component={Nominate}
+            />
+            <Route
+              path="nominate-retro/:id"
+              onEnter={this.requireAuth}
+              component={NominateRetro}
             />
             <Route path="vote(/:id)" component={Vote} />
           </Route>
