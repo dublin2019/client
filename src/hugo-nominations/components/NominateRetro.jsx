@@ -10,9 +10,9 @@ import Snackbar from 'material-ui/Snackbar'
 import { setScene } from '../../app/actions/app'
 import { ConfigConsumer } from '../../lib/config-context'
 import { setNominator, clearNominationError } from '../actions'
-import { categoryRetroInfo } from '../constants'
+import { categoryInfo } from '../constants'
 
-import NominationCategory from './NominationCategory'
+import NominationRetroCategory from './NominationRetroCategory'
 import NominationSignature from './NominationSignature'
 import SaveAllButton from './SaveAllButton'
 import './Nominate.css'
@@ -169,8 +169,8 @@ class NominateRetro extends React.Component {
               />
               <Row>
                 <Col xs={10} xsOffset={1} lg={8} lgOffset={2}>
-                  {Object.keys(categoryRetroInfo).map(category => (
-                    <NominationCategory
+                  {Object.keys(categoryInfo).map(category => (
+                    <NominationRetroCategory
                       active={active}
                       category={category}
                       key={category}

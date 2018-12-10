@@ -180,21 +180,8 @@ export const categoryInfo = {
       author: 'Author',
       publisher: 'Publisher/Where Published'
     }
-  }
-}
+  },
 
-export const nominationFields = categories => {
-  if (!Array.isArray(categories)) categories = [categories]
-  const nf = {}
-  categories.forEach(cat => {
-    const texts = categoryInfo[cat]
-    if (!texts) throw new Error('Unknown category ' + JSON.stringify(cat))
-    for (const key in texts.nominationFieldLabels) nf[key] = true
-  })
-  return Object.keys(nf)
-}
-
-export const categoryRetroInfo = {
   RetroNovel: {
     title: 'Retro Hugo for Best Novel (1943)',
     description: `A science fiction or fantasy story of forty thousand (40,000) words or more published in ${RETROYEAR}.`,
@@ -354,11 +341,11 @@ export const categoryRetroInfo = {
   }
 }
 
-export const nominationRetroFields = categories => {
+export const nominationFields = categories => {
   if (!Array.isArray(categories)) categories = [categories]
   const nf = {}
   categories.forEach(cat => {
-    const texts = categoryRetroInfo[cat]
+    const texts = categoryInfo[cat]
     if (!texts) throw new Error('Unknown category ' + JSON.stringify(cat))
     for (const key in texts.nominationFieldLabels) nf[key] = true
   })
