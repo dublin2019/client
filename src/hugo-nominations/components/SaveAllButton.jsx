@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 
 import Badge from 'material-ui/Badge'
 import IconButton from 'material-ui/IconButton'
+import RaisedButton from 'material-ui/RaisedButton'
 import Paper from 'material-ui/Paper'
 import ListCheck from 'material-ui/svg-icons/av/playlist-add-check'
 import transitions from 'material-ui/styles/transitions'
@@ -13,7 +14,7 @@ const SaveAllButton = ({ changedCategories, signature, submitNominations }) => (
   <Paper
     circle
     className="SaveAllButton"
-    style={{
+    style={{ 
       opacity: changedCategories.size ? 1 : 0,
       transition: transitions.easeOut(),
       visibility: changedCategories.size ? 'visible' : 'hidden'
@@ -32,23 +33,15 @@ const SaveAllButton = ({ changedCategories, signature, submitNominations }) => (
       primary
       style={{ padding: 0 }}
     >
-      <IconButton
+      <RaisedButton
+        label='Save all'
         disabled={changedCategories.size == 0}
         onClick={() =>
           changedCategories
             .keySeq()
             .forEach(category => submitNominations(category, signature))
         }
-        style={{
-          transition: transitions.easeOut(),
-          position: 'relative',
-          height: 56,
-          width: 56,
-          padding: 0,
-          borderRadius: '50%',
-          textAlign: 'center',
-          verticalAlign: 'bottom'
-        }}
+        icon={<ListCheck />}
         tooltip="Click here to save all categories"
         tooltipPosition="top-left"
         tooltipStyles={{
@@ -57,8 +50,7 @@ const SaveAllButton = ({ changedCategories, signature, submitNominations }) => (
           marginTop: 40
         }}
       >
-        <ListCheck />
-      </IconButton>
+      </RaisedButton>
     </Badge>
   </Paper>
 )
