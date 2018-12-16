@@ -44,6 +44,17 @@ export const categoryInfo = {
     }
   },
 
+  Series: {
+    title: 'Best Series',
+    description: `A multi-volume science fiction or fantasy story, unified by elements such as plot, characters, setting, and presentation, which has appeared in at least three (3) volumes consisting of a total of at least 240,000 words by the close of the calendar year ${YEAR}, at least one of which was published in ${YEAR}. If any series and a subset series thereof both receive sufficient nominations to appear on the final ballot, only the version which received more nominations shall appear.`,
+    nominationFieldLabels: {
+      title: 'Name of Series',
+      author: 'Author',
+      volume: 'Qualifying Volume',
+      publisher: 'Publisher'
+    }
+  },
+
   RelatedWork: {
     title: 'Best Related Work',
     description: `Any work related to the field of science fiction, fantasy, or fandom, appearing for the first time during ${YEAR} or which has been substantially modified during ${YEAR}, and which is either non-fiction or, if fictional, is noteworthy primarily for aspects other than the fictional text, and which is not eligible in any other category.`,
@@ -151,17 +162,6 @@ export const categoryInfo = {
     }
   },
 
-  Series: {
-    title: 'Best Series',
-    description: `A multi-volume science fiction or fantasy story, unified by elements such as plot, characters, setting, and presentation, which has appeared in at least three (3) volumes consisting of a total of at least 240,000 words by the close of the calendar year ${YEAR}, at least one of which was published in ${YEAR}. If any series and a subset series thereof both receive sufficient nominations to appear on the final ballot, only the version which received more nominations shall appear.`,
-    nominationFieldLabels: {
-      title: 'Name of Series',
-      author: 'Author',
-      volume: 'Qualifying Volume',
-      publisher: 'Publisher'
-    }
-  },
-
   BestArtBook: {
     title: 'Best Art Book',
     description: `Any art book in the field of science fiction, fantasy, or fandom, appearing for the first time in ${YEAR} or which has been substantially modified in ${YEAR}, and which is not eligible in Best Graphic Story.`,
@@ -232,6 +232,17 @@ export const categoryInfo = {
     }
   },
 
+  RetroSeries: {
+    title: 'Retro Hugo for Best Series (1943)',
+    description: `A multi-volume science fiction or fantasy story, unified by elements such as plot, characters, setting, and presentation, which has appeared in at least three (3) volumes consisting of a total of at least 240,000 words by the close of the calendar year ${RETROYEAR}, at least one of which was published in ${RETROYEAR}. If any series and a subset series thereof both receive sufficient nominations to appear on the final ballot, only the version which received more nominations shall appear.`,
+    nominationFieldLabels: {
+      title: 'Name of Series',
+      author: 'Author',
+      volume: 'Qualifying Volume',
+      publisher: 'Publisher'
+    }
+  },
+  
   RetroRelatedWork: {
     title: 'Retro Hugo for Best Related Work (1943)',
     description: `Any work related to the field of science fiction, fantasy, or fandom, appearing for the first time during ${RETROYEAR} or which has been substantially modified during ${RETROYEAR}, and which is either non-fiction or, if fictional, is noteworthy primarily for aspects other than the fictional text, and which is not eligible in any other category.`,
@@ -339,17 +350,6 @@ export const categoryInfo = {
     }
   },
 
-  RetroSeries: {
-    title: 'Retro Hugo for Best Series (1943)',
-    description: `A multi-volume science fiction or fantasy story, unified by elements such as plot, characters, setting, and presentation, which has appeared in at least three (3) volumes consisting of a total of at least 240,000 words by the close of the calendar year ${RETROYEAR}, at least one of which was published in ${RETROYEAR}. If any series and a subset series thereof both receive sufficient nominations to appear on the final ballot, only the version which received more nominations shall appear.`,
-    nominationFieldLabels: {
-      title: 'Name of Series',
-      author: 'Author',
-      volume: 'Qualifying Volume',
-      publisher: 'Publisher'
-    }
-  },
-  
   RetroBestArtBook: {
     title: 'Retro Hugo for Best Art Book (1943)',
     description: `Any art book in the field of science fiction, fantasy, or fandom, appearing for the first time in ${RETROYEAR} or which has been substantially modified in ${RETROYEAR}, and which is not eligible in Best Graphic Story.`,
