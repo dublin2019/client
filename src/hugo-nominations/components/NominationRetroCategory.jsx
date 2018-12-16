@@ -150,7 +150,7 @@ const NominationRetroCategory = ({ category, ...props }) => {
   const { title, description, nominationFieldLabels } = categoryInfo[category]
   const fields = nominationFields(category)
   const colSpan = Math.floor(12 / fields.size)
-  const background = category.startsWith('Retro')?"RetroNominationCategory":"NominationCategory"
+  const background = "NominationCategory"
   if (!category.startsWith('Retro')) return null
   return (
     <Card className={background} >
