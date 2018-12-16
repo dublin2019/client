@@ -11,6 +11,7 @@ export const categoryGroups = {
   FanArtist: [],
   Zines: ['Semiprozine', 'Fanzine', 'Fancast'],
   FanWriter: [],
+  BestArtBook: [],
   NewWriter: [],
   Lodestar: [],
   RetroWritten: ['RetroNovel', 'RetroNovella', 'RetroNovelette', 'RetroShortStory', 'RetroRelatedWork'],
@@ -22,7 +23,8 @@ export const categoryGroups = {
   RetroProArtist: [],
   RetroFanArtist: [],
   RetroZines: ['RetroSemiprozine', 'RetroFanzine', 'RetroFancast'],
-  RetroFanWriter: []
+  RetroFanWriter: [],
+  RetroBestArtBook: []
 
 }
 

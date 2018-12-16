@@ -162,6 +162,16 @@ export const categoryInfo = {
     }
   },
 
+  BestArtBook: {
+    title: 'Best Art Book',
+    description: `Any art book in the field of science fiction, fantasy, or fandom, appearing for the first time in ${YEAR} or which has been substantially modified in ${YEAR}, and which is not eligible in Best Graphic Story.`,
+    nominationFieldLabels: {
+      title: 'Title',
+      author: 'Author',
+      publisher: 'Publisher/Where Published'
+    }
+  },
+  
   NewWriter: {
     title: 'John W. Campbell Award',
     description: `Award for the best new science fiction writer, sponsored by Dell Magazines (not a Hugo Award). A new writer is one whose first work of science fiction or fantasy appeared in ${YEAR -
@@ -337,6 +347,16 @@ export const categoryInfo = {
       author: 'Author',
       volume: 'Qualifying Volume',
       publisher: 'Publisher'
+    }
+  },
+  
+  RetroBestArtBook: {
+    title: 'Retro Hugo for Best Art Book (1943)',
+    description: `Any art book in the field of science fiction, fantasy, or fandom, appearing for the first time in ${RETROYEAR} or which has been substantially modified in ${RETROYEAR}, and which is not eligible in Best Graphic Story.`,
+    nominationFieldLabels: {
+      title: 'Title',
+      author: 'Author',
+      publisher: 'Publisher/Where Published'
     }
   }
 }
