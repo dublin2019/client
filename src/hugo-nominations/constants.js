@@ -193,7 +193,7 @@ export const categoryInfo = {
   },
   
   RetroNovel: {
-    title: `Best Novel (${RETROYEAR} Retro Hugo)`,
+    title: `Best Novel (${RETROYEAR + 1} Retro Hugo)`,
     description: `A science fiction or fantasy story of forty thousand (40,000) words or more published in ${RETROYEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
@@ -203,7 +203,7 @@ export const categoryInfo = {
   },
 
   RetroNovella: {
-    title: `Best Novella (${RETROYEAR} Retro Hugo)`,
+    title: `Best Novella (${RETROYEAR + 1} Retro Hugo)`,
     description: `A science fiction or fantasy story of between seventeen thousand five hundred (17,500) and forty thousand (40,000) words published in ${RETROYEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
@@ -213,7 +213,7 @@ export const categoryInfo = {
   },
 
   RetroNovelette: {
-    title: `Best Novelette (${RETROYEAR} Retro Hugo)`,
+    title: `Best Novelette (${RETROYEAR + 1} Retro Hugo)`,
     description: `A science fiction or fantasy story of between seven thousand five hundred (7,500) and seventeen thousand five hundred (17,500) words published in ${RETROYEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
@@ -223,7 +223,7 @@ export const categoryInfo = {
   },
 
   RetroShortStory: {
-    title: `Best Short Story (${RETROYEAR} Retro Hugo)`,
+    title: `Best Short Story (${RETROYEAR + 1} Retro Hugo)`,
     description: `A science fiction or fantasy story of less than seven thousand five hundred (7,500) words published in ${RETROYEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
@@ -233,7 +233,7 @@ export const categoryInfo = {
   },
 
   RetroSeries: {
-    title: `Best Series (${RETROYEAR} Retro Hugo)`,
+    title: `Best Series (${RETROYEAR + 1} Retro Hugo)`,
     description: `A multi-volume science fiction or fantasy story, unified by elements such as plot, characters, setting, and presentation, which has appeared in at least three (3) volumes consisting of a total of at least 240,000 words by the close of the calendar year ${RETROYEAR}, at least one of which was published in ${RETROYEAR}. If any series and a subset series thereof both receive sufficient nominations to appear on the final ballot, only the version which received more nominations shall appear.`,
     nominationFieldLabels: {
       title: 'Name of Series',
@@ -244,7 +244,7 @@ export const categoryInfo = {
   },
   
   RetroRelatedWork: {
-    title: `Best Related Work (${RETROYEAR} Retro Hugo)`,
+    title: `Best Related Work (${RETROYEAR + 1} Retro Hugo)`,
     description: `Any work related to the field of science fiction, fantasy, or fandom, appearing for the first time during ${RETROYEAR} or which has been substantially modified during ${RETROYEAR}, and which is either non-fiction or, if fictional, is noteworthy primarily for aspects other than the fictional text, and which is not eligible in any other category.`,
     nominationFieldLabels: {
       title: 'Title',
@@ -254,7 +254,7 @@ export const categoryInfo = {
   },
 
   RetroGraphicStory: {
-    title: `Best Graphic Story (${RETROYEAR} Retro Hugo)`,
+    title: `Best Graphic Story (${RETROYEAR + 1} Retro Hugo)`,
     description: `Any science fiction or fantasy story told in graphic form appearing for the first time in ${RETROYEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
@@ -264,7 +264,7 @@ export const categoryInfo = {
   },
 
   RetroDramaticLong: {
-    title: `Best Dramatic Presentation, Long Form (${RETROYEAR} Retro Hugo)`,
+    title: `Best Dramatic Presentation, Long Form (${RETROYEAR + 1} Retro Hugo)`,
     description: `Any theatrical feature or other production, with a complete running time of more than 90 minutes, in any medium of dramatized science fiction, fantasy or related subjects that has been publicly presented for the first time in its present dramatic form during ${RETROYEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
@@ -273,7 +273,7 @@ export const categoryInfo = {
   },
 
   RetroDramaticShort: {
-    title: `Best Dramatic Presentation, Short Form (${RETROYEAR} Retro Hugo)`,
+    title: `Best Dramatic Presentation, Short Form (${RETROYEAR + 1} Retro Hugo)`,
     description: `Any television program or other production, with a complete running time of 90 minutes or less, in any medium of dramatized science fiction, fantasy or related subjects that has been publicly presented for the first time in its present dramatic form during ${RETROYEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
@@ -283,7 +283,7 @@ export const categoryInfo = {
   },
 
   RetroEditorShort: {
-    title: `Best Professional Editor, Short Form (${RETROYEAR} Retro Hugo)`,
+    title: `Best Professional Editor, Short Form (${RETROYEAR + 1} Retro Hugo)`,
     description: `The editor of at least four (4) anthologies, collections or magazine issues (or their equivalent in other media) primarily devoted to science fiction and / or fantasy, at least one of which was published in ${RETROYEAR}.`,
     nominationFieldLabels: {
       editor: 'Editor'
@@ -291,7 +291,7 @@ export const categoryInfo = {
   },
 
   RetroEditorLong: {
-    title: `Best Professional Editor, Long Form (${RETROYEAR} Retro Hugo)`,
+    title: `Best Professional Editor, Long Form (${RETROYEAR + 1} Retro Hugo)`,
     description: `The editor of at least four (4) novel-length works primarily devoted to science fiction and / or fantasy published in ${RETROYEAR} that do not qualify as works under Best Editor, Short Form.`,
     nominationFieldLabels: {
       editor: 'Editor'
@@ -299,7 +299,7 @@ export const categoryInfo = {
   },
 
   RetroProArtist: {
-    title: `Best Professional Artist (${RETROYEAR} Retro Hugo)`,
+    title: `Best Professional Artist (${RETROYEAR + 1} Retro Hugo)`,
     description: `An illustrator whose work has appeared in a professional publication in the field of science fiction or fantasy during ${RETROYEAR}.`,
     nominationFieldLabels: {
       author: 'Artist/Illustrator',
@@ -308,7 +308,7 @@ export const categoryInfo = {
   },
 
   RetroSemiprozine: {
-    title: `Best Semiprozine (${RETROYEAR} Retro Hugo)`,
+    title: `Best Semiprozine (${RETROYEAR + 1} Retro Hugo)`,
     description: `Any generally available non-professional periodical publication devoted to science fiction or fantasy, or related subjects which by the close of ${RETROYEAR} has published four (4) or more issues (or the equivalent in other media), at least one (1) of which appeared in the previous calendar year, which does not qualify as a fancast, and which in the previous calendar year met at least one (1) of the following criteria: (1) paid its contributors and/or staff in other than copies of the publication, (2) was generally available only for paid purchase.`,
     nominationFieldLabels: {
       title: 'Title'
@@ -316,7 +316,7 @@ export const categoryInfo = {
   },
 
   RetroFanzine: {
-    title: `Best Fanzine (${RETROYEAR} Retro Hugo)`,
+    title: `Best Fanzine (${RETROYEAR + 1} Retro Hugo)`,
     description: `Any generally available non-professional periodical publication devoted to science fiction, fantasy, or related subjects that by the close of ${RETROYEAR} has published four (4) or more issues (or the equivalent in other media), at least one (1) of which appeared in ${RETROYEAR}, that does not qualify as a semiprozine or a fancast, and that in ${RETROYEAR} met neither of the following criteria: (1) paid its contributors or staff monetarily in other than copies of the publication, (2) was generally available only for paid purchase.`,
     nominationFieldLabels: {
       title: 'Title'
@@ -324,7 +324,7 @@ export const categoryInfo = {
   },
 
   RetroFancast: {
-    title: `Best Fancast (${RETROYEAR} Retro Hugo)`,
+    title: `Best Fancast (${RETROYEAR + 1} Retro Hugo)`,
     description: `Any generally available non-professional audio or video periodical devoted to science fiction, fantasy, or related subjects that by the close of ${RETROYEAR} has released four (4) or more episodes, at least one (1) of which appeared in ${RETROYEAR}, and that does not qualify as a dramatic presentation.`,
     nominationFieldLabels: {
       title: 'Title',
@@ -333,7 +333,7 @@ export const categoryInfo = {
   },
 
   RetroFanWriter: {
-    title: `Best Fan Writer (${RETROYEAR} Retro Hugo)`,
+    title: `Best Fan Writer (${RETROYEAR + 1} Retro Hugo)`,
     description: `Any person whose writing has appeared in semiprozines or fanzines or in generally available electronic media during ${RETROYEAR}.`,
     nominationFieldLabels: {
       author: 'Author',
@@ -342,7 +342,7 @@ export const categoryInfo = {
   },
 
   RetroFanArtist: {
-    title: `Best Fan Artist (${RETROYEAR} Retro Hugo)`,
+    title: `Best Fan Artist (${RETROYEAR + 1} Retro Hugo)`,
     description: `An artist or cartoonist whose work has appeared through publication in semiprozines or fanzines or through other public, non-professional, display (including at a convention or conventions), during ${RETROYEAR}.`,
     nominationFieldLabels: {
       author: 'Artist/Illustrator',
@@ -351,7 +351,7 @@ export const categoryInfo = {
   },
 
   RetroBestArtBook: {
-    title: `Best Art Book (${RETROYEAR} Retro Hugo)`,
+    title: `Best Art Book (${RETROYEAR + 1} Retro Hugo)`,
     description: `Any art book in the field of science fiction, fantasy, or fandom, appearing for the first time in ${RETROYEAR} or which has been substantially modified in ${RETROYEAR}, and which is not eligible in Best Graphic Story.`,
     nominationFieldLabels: {
       title: 'Title',
