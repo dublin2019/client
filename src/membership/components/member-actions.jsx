@@ -49,7 +49,7 @@ const HugoNominateAction = props => (
   <HugoAction
     attrName="hugo_nominator"
     getPath={id => `/hugo/nominate/${id}`}
-    primaryText="Nominate for the Main Hugo Awards"
+    primaryText="Nominate for the 2019 Hugo Awards"
     {...props}
   />
 )
@@ -58,7 +58,7 @@ const HugoNominateRetroAction = props => (
   <HugoAction
     attrName="hugo_nominator"
     getPath={id => `/hugo/nominate-retro/${id}`}
-    primaryText="Nominate for the Retro Hugo Awards"
+    primaryText="Nominate for the 1944 Retro Hugo Awards"
     {...props}
   />
 )
