@@ -172,16 +172,6 @@ export const categoryInfo = {
     }
   },
   
-  NewWriter: {
-    title: 'John W. Campbell Award',
-    description: `Award for the best new science fiction writer, sponsored by Dell Magazines (not a Hugo Award). A new writer is one whose first work of science fiction or fantasy appeared in ${YEAR -
-      1} or ${YEAR} in a professional publication. For Campbell Award purposes, a professional publication is one for which more than a nominal amount was paid, any publication that had an average press run of at least 10,000 copies, or any other criteria that the Award sponsors may designate.`,
-    nominationFieldLabels: {
-      author: 'Author',
-      example: 'Example'
-    }
-  },
-  
   Lodestar: {
     title: 'Lodestar Award for Best Young Adult Book',
     description: `Award for the best Young Adult fiction (not a Hugo Award). A work of science fiction or fantasy in the Young Adult genre published in ${YEAR} in a professional publication.`,
@@ -192,6 +182,16 @@ export const categoryInfo = {
     }
   },
 
+  NewWriter: {
+    title: 'John W. Campbell Award',
+    description: `Award for the best new science fiction writer, sponsored by Dell Magazines (not a Hugo Award). A new writer is one whose first work of science fiction or fantasy appeared in ${YEAR -
+      1} or ${YEAR} in a professional publication. For Campbell Award purposes, a professional publication is one for which more than a nominal amount was paid, any publication that had an average press run of at least 10,000 copies, or any other criteria that the Award sponsors may designate.`,
+    nominationFieldLabels: {
+      author: 'Author',
+      example: 'Example'
+    }
+  },
+  
   RetroNovel: {
     title: 'Retro Hugo for Best Novel (1943)',
     description: `A science fiction or fantasy story of forty thousand (40,000) words or more published in ${RETROYEAR}.`,
