@@ -36,7 +36,6 @@ export const memberFields = [
   'city',
   'postcode',
   'address',
-  'badge_text',
   'paper_pubs'
 ]
 

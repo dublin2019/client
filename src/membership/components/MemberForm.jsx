@@ -160,7 +160,7 @@ export default class MemberForm extends Component {
       tabIndex
     }
     
-    const haveBadgeName = true; // TODO: once it exists in the backend, toggle
+    const haveBadgeName = false; // TODO: once it exists in the backend, toggle
     const badgeName = haveBadgeName ? (
             <Row>
               <Col xs={12}>
