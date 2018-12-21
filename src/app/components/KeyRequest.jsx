@@ -43,6 +43,11 @@ class KeyRequest extends React.Component {
                 you; it's the one that you provided when signing up, and at
                 which you've previously received messages from us.
               </p>
+              <p>
+              Please note: if you are on Dublin 2019 staff, the address to 
+              enter may well be your private email address rather than your 
+              @dublin2019.com address.
+              </p>
               {allowCreate && (
                 <p>
                   If you don't yet have an account, please enter your name as
