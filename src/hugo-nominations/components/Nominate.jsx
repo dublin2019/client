@@ -103,6 +103,11 @@ const NominationsHead = ({ active, name, signature }) => (
         Administrator if close in length to the category boundary.
       </p>
       <p>
+        The 'Reset' and 'Save' buttons in each section affect that section only. 
+        There is a separate 'Save All' button in the bottom right of the screen
+        which will save your nominations in all categories.
+      </p>
+      <p>
         If you have difficulties accessing the online ballot, or you have more
         general questions on the Hugo process, you can e-mail{' '}
         <a href="mailto:hugohelp@dublin2019.com">hugohelp@dublin2019.com</a> for
