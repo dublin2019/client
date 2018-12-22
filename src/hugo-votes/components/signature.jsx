@@ -23,7 +23,7 @@ export default class VoteSignature extends React.Component {
           To access the Hugo voter packet and/or to start voting, please enter
           your name here to confirm that you are <b>{preferredName}</b> (
           {person.get('email')}
-          ), Worldcon 75 member <b>#{person.get('member_number')}</b>:
+          ), Dublin2019, an Irish Worldcon member <b>#{person.get('member_number')}</b>:
           <form
             onSubmit={ev => {
               ev.preventDefault()
