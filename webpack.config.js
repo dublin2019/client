@@ -2,7 +2,7 @@ const path = require('path')
 const url = require('url')
 const webpack = require('webpack')
 
-const title = process.env.TITLE || 'Worldcon 75'
+const title = process.env.TITLE || 'Dublin2019'
 
 const cfg = {
   entry: {
