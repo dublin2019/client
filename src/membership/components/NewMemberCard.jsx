@@ -12,7 +12,8 @@ const contents = {
       <div>
         <p>
           Persons who have never been attending or supporting members of any
-          previous Worldcon are eligible for a <b>First Worldcon</b> attending
+          previous Worldcon and are residents of the Island of Ireland 
+	  are eligible for a <b>Island of Ireland resident First Worldcon</b> attending
           membership of Dublin 2019, an Irish Worldcon.
         </p>
         <p>
@@ -32,14 +33,15 @@ const contents = {
       </div>
     ),
     memberships: [
-      'FirstWorldcon',
       'YoungAdult',
       'Adult',
       '_divider',
       'Child',
       'Infant',
       '_divider',
-      'Supporter'
+      'Supporter',
+      '_divider',
+      'FirstWorldcon'
     ]
   },
 
@@ -49,7 +51,8 @@ const contents = {
       <div>
         <p>
           Persons who have never been attending or supporting members of any
-          previous Worldcon are eligible for a <b>First Worldcon</b> attending
+          previous Worldcon and are residents of the Island of Ireland 
+	  are eligible for a <b>Island of Ireland resident First Worldcon</b> attending
           membership of Dublin 2019, an Irish Worldcon.
         </p>
         <p>

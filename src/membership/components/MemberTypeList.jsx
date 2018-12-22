@@ -23,8 +23,8 @@ export const memberTypeData = {
     icon: <DirectionsWalk />
   },
   FirstWorldcon: {
-    primary: 'First Worldcon membership',
-    secondary: 'Have never been a Worldcon member',
+    primary: 'Island of Ireland resident First Worldcon membership',
+    secondary: 'Have never been a Worldcon member and be a resident of the Island of Ireland.',
     icon: <StarTicket />
   },
   YoungAdult: {
