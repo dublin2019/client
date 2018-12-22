@@ -43,7 +43,7 @@ const Messages = connect(
 const NominationsHead = ({ active, name, signature }) => (
   <Row className="bg-text">
     <Col xs={10} xsOffset={1} lg={8} lgOffset={2} style={{ paddingTop: 20 }}>
-      <h1>{'Hugo nominations for ' + name}</h1>
+      <h1>{'Retro Hugo nominations for ' + name}</h1>
       {signature ? (
         <h3 style={{ marginTop: -20 }}>Signing as "{signature}"</h3>
       ) : null}

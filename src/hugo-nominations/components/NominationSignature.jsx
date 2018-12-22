@@ -37,7 +37,7 @@ export default class NominationSignature extends React.Component {
         <p>
           Please choose up to five nominees in each category. We recommend that
           you nominate whatever works and creators you have personally read or
-          seen that were your favorites from 2018.
+          seen that were your favorites from 2018 (Hugos) or 1943 (Retro Hugos).
         </p>
         <p>
           The deadline for nominations is Friday March 15th, 2019 at 11:59pm PDT (GMT+9).
