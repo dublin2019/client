@@ -79,7 +79,7 @@ If any series and a subset series thereof both receive sufficient nominations to
 
   DramaticLong: {
     title: 'Best Dramatic Presentation, Long Form',
-    description: `Any theatrical feature or other production with a complete running time of more than 90 minutes, in any medium of dramatized science fiction, fantasy, or related subjects that has been publicly presented for the first time in its present dramatic form during ${YEAR}.`,
+    description: `Any theatrical feature or other production with a *complete running time of more than 90 minutes*, in any medium of dramatized science fiction, fantasy, or related subjects that has been publicly presented for the first time in its present dramatic form during ${YEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
       producer: 'Studio/Network/Production Company'
@@ -88,7 +88,7 @@ If any series and a subset series thereof both receive sufficient nominations to
 
   DramaticShort: {
     title: 'Best Dramatic Presentation, Short Form',
-    description: `Any television program or other production with a complete running time of 90 minutes or less, in any medium of dramatized science fiction, fantasy, or related subjects that has been publicly presented for the first time in its present dramatic form during ${YEAR}.`,
+    description: `Any television program or other production with a *complete running time of 90 minutes or less*, in any medium of dramatized science fiction, fantasy, or related subjects that has been publicly presented for the first time in its present dramatic form during ${YEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
       series: '(Series)',
@@ -271,7 +271,7 @@ If any series and a subset series thereof both receive sufficient nominations to
 
   RetroDramaticLong: {
     title: `Best Dramatic Presentation, Long Form (${RETROYEAR + 1} Retro Hugo)`,
-    description: `Any theatrical feature or other production with a complete running time of more than 90 minutes, in any medium of dramatized science fiction, fantasy, or related subjects that was publicly presented for the first time in its present dramatic form during ${RETROYEAR}.`,
+    description: `Any theatrical feature or other production with a *complete running time of more than 90 minutes*, in any medium of dramatized science fiction, fantasy, or related subjects that was publicly presented for the first time in its present dramatic form during ${RETROYEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
       producer: 'Studio/Network/Production Company'
@@ -280,7 +280,7 @@ If any series and a subset series thereof both receive sufficient nominations to
 
   RetroDramaticShort: {
     title: `Best Dramatic Presentation, Short Form (${RETROYEAR + 1} Retro Hugo)`,
-    description: `Any television program or other production with a complete running time of 90 minutes or less, in any medium of dramatized science fiction, fantasy, or related subjects that was publicly presented for the first time in its then dramatic form during ${RETROYEAR}.`,
+    description: `Any television program or other production with a *complete running time of 90 minutes or less*, in any medium of dramatized science fiction, fantasy, or related subjects that was publicly presented for the first time in its then dramatic form during ${RETROYEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
       series: '(Series)',
