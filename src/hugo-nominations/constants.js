@@ -46,7 +46,7 @@ export const categoryInfo = {
 
   Series: {
     title: 'Best Series',
-    description: `A multi-volume science fiction or fantasy story, unified by elements such as plot, characters, setting, and presentation, which has appeared in at least three (3) volumes consisting of a total of at least 240,000 words by the close of the calendar year ${YEAR}, at least one of which was published in ${YEAR}, and which has not previously won under §3.3.5 of the WSFS Constitution. 
+    description: `A multi-volume science fiction or fantasy story, unified by elements such as plot, characters, setting, and presentation, which has appeared in at least three (3) volumes consisting of a total of at least 240,000 words by the close of the calendar year ${YEAR}, at least one of which was published in ${YEAR}, and which has not previously won under §3.3.5 of the WSFS Constitution (see note below). 
 Previous losing finalists in the Best Series category shall be eligible only upon the publication of at least two (2) additional installments consisting in total of at least 240,000 words after they qualified for their last appearance on the final ballot and by the close of ${YEAR}. 
 If any series and a subset series thereof both receive sufficient nominations to appear on the final ballot, only the version which received more nominations shall appear.
 `,
