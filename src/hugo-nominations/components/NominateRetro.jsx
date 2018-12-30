@@ -98,6 +98,12 @@ const NominationsHead = ({ active, name, signature }) => (
         last installment appears.
       </p>
       <p>
+        The categories of Best Novel, Novella, Novelette, and Short Story are open 
+        to works in which the text is the primary form of communication, regardless
+         of the publication medium, including but not limited to physical print, 
+         audiobook, and ebook.
+      </p>
+      <p>
         Nominations in the written fiction and dramatic presentation categories
         may be relocated to a different category by the Hugo Awards
         Administrator if close in length to the category boundary.
