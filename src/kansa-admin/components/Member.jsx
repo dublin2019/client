@@ -43,6 +43,8 @@ export const membershipTypes = [
   'NonMember',
   'Exhibitor',
   'Helper',
+  'HugoNominator',
+  'Guest',
   'Supporter',
   'Infant',
   'Child',
