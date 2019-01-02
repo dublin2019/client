@@ -178,12 +178,12 @@ const MemberActions = ({ member }) => (
         <List style={{ paddingTop: 0 }}>
           <EditAction member={member} />
           <UpgradeAction member={member} paidPaperPubs={paid_paper_pubs} />
-          <BarcodeAction attr={attr} member={member} />
+	      { /*   <BarcodeAction attr={attr} member={member} /> */ }
           <HugoNominateAction getMemberAttr={getMemberAttr} member={member} />
           <HugoNominateRetroAction getMemberAttr={getMemberAttr} member={member} />
           <HugoVoteAction getMemberAttr={getMemberAttr} member={member} />
           <SiteSelectionTokenAction attr={attr} />
-          <SlackInviteAction attr={attr} />
+          { /* <SlackInviteAction attr={attr} /> */ }
           <SouvenirBookAction attr={attr} />
         </List>
       )
