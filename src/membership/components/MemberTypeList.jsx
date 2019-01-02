@@ -96,6 +96,7 @@ export default class MemberTypeList extends Component {
       leftIcon: icon,
       primaryText,
       secondaryText,
+      secondaryTextLines: 2,
       style: isDisabled ? { opacity: 0.3 } : null,
       value: type
     }
