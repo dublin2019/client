@@ -36,8 +36,9 @@ export default class AppRouter extends Route {
     else this.dispatch(tryLogin(() => callback()))
   }
 
-  doLogin = ({ location: { query }, params: { email, key, id } }) => {
-    const next = (query && query.next) || (id ? `/hugo/vote/${id}` : null)
+  doLogin = ({ location: { query }, params: { email, key, id, action } }) => {
+    const newaction = action ? action : 'nominate';
+    const next = (query && query.next) || (id ? `/hugo/${newaction}/${id}` : null)
     this.dispatch(keyLogin(email, key, next))
   }
 
@@ -52,7 +53,7 @@ export default class AppRouter extends Route {
   render() {
     return (
       <Router history={this.props.history}>
-        <Route path="/login/:email/:key(/:id)" onEnter={this.doLogin} />
+        <Route path="/login/:email/:key(/:id)(/:action)" onEnter={this.doLogin} />
         <Route
           path="/"
           component={App}
