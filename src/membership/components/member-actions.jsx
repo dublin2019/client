@@ -32,7 +32,7 @@ let HugoAction = ({
 }) => {
   if (!getMemberAttr(member)[attrName]) return null
   return people.size > 1 &&
-    people.some(p => p !== member && getMemberAttr(p)[attrName]) ? null : (
+    !(people.some(p => p == member && getMemberAttr(p)[attrName])) ? null : (
     <Action
       leftIcon={<Rocket />}
       onClick={() => push(getPath(member.get('id')))}
