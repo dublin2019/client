@@ -50,13 +50,17 @@ class NominationActionsRow extends React.Component {
         {active ? (
           <Col xs>
             <RaisedButton
-              label="Save"
-              disabled={disabled}
+              label="Save All"
+              disabled={changedCategories.size == 0}
               disabledBackgroundColor="transparent"
               icon={<ListCheck />}
-              onClick={onSave}
+              onClick={() =>
+                changedCategories
+                  .keySeq()
+                  .forEach(category => submitNominations(category, signature))
+              }
               style={{ float: 'right', marginLeft: 15 }}
-              title="Save this category"
+              title="Save all"
             />
             <RaisedButton
               label="Reset"
