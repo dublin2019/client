@@ -70,9 +70,9 @@ const NominationsHead = ({ active, name, signature }) => (
         have personally read or seen that were your favorites from 2018.
       </p>
       <p>
-        The deadline for nominations is Friday March 15th, 2019 at 11:59pm PDT (GMT+9)
+        The deadline for nominations is Friday March 15th, 2019 at 11:59pm PDT (GMT+9).
         You can make as many changes as you
-        like up to your nomination ballot until then. Your current ballot will
+        like to your nomination ballot until then. Your current ballot will
         be emailed to you an hour after you stop making changes to it.
       </p>
       <p>
@@ -124,7 +124,7 @@ const NominationsHead = ({ active, name, signature }) => (
         for more information about the Hugo Awards. The full rules for the Hugo
         Awards are contained in the{' '}
         <a
-          href="http://www.wsfs.org/wp-content/uploads/2016/10/WSFS-Constitution-as-of-August-22-2016.pdf"
+          href="http://www.wsfs.org/wp-content/uploads/2018/09/WSFS-Constitution-as-of-August-21-2018.pdf"
           target="_blank"
         >
           WSFS constitution
