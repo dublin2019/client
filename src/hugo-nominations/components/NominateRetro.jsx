@@ -14,7 +14,6 @@ import { categoryInfo } from '../constants'
 
 import NominationRetroCategory from './NominationRetroCategory'
 import NominationSignature from './NominationSignature'
-import SaveAllButton from './SaveAllButton'
 import './Nominate.css'
 
 const Messages = connect(
@@ -109,9 +108,8 @@ const NominationsHead = ({ active, name, signature }) => (
         Administrator if close in length to the category boundary.
       </p>
       <p>
-        The 'Reset' and 'Save' buttons in each section affect that section only. 
-        There is a separate 'Save All' button in the bottom right of the screen
-        which will save your nominations in all categories.
+        The 'Reset' button in each section affects that section only. 
+        The 'Save All' button in each section will save your nominations in all categories.
       </p>
       <p>
         If you have difficulties accessing the online ballot, or you have more
@@ -190,7 +188,6 @@ class NominateRetro extends React.Component {
                   ))}
                 </Col>
               </Row>
-              {active ? <SaveAllButton signature={signature} /> : null}
               <NominationSignature
                 open={active && !signature}
                 setName={signature => this.setState({ signature })}
