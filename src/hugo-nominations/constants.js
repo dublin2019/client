@@ -125,7 +125,7 @@ If any series and a subset series thereof both receive sufficient nominations to
 
   Semiprozine: {
     title: 'Best Semiprozine',
-    description: `Any generally available non-professional publication devoted to science fiction or fantasy which by the close of ${YEAR} had published at least four (4) issues (or the equivalent in other media), and at least one (1) of which appeared in ${YEAR}, which does not qualify as a fancast, and which in ${YEAR} has met at least one (1) of the following criteria:
+    description: `Any generally available non-professional periodical publication devoted to science fiction or fantasy or related subjects which by the close of ${YEAR} had published at least four (4) issues (or the equivalent in other media), and at least one (1) of which appeared in ${YEAR}, which does not qualify as a fancast, and which in ${YEAR} has met at least one (1) of the following criteria:
 1. Paid its contributors or staff in other than copies of the publication.
 2. Was generally available only for paid purchase`,
     nominationFieldLabels: {
@@ -135,7 +135,7 @@ If any series and a subset series thereof both receive sufficient nominations to
 
   Fanzine: {
     title: 'Best Fanzine',
-    description: `Any generally available non-professional publication devoted to science fiction, fantasy, or related subjects which, by the close of ${YEAR}, had published at least four (4) issues (or the equivalent in other media), at least one (1) of which appeared in ${YEAR}, and which does not qualify as a semiprozine or a fancast, and which in ${YEAR} met neither of the following criteria:
+    description: `Any generally available non-professional periodical publication devoted to science fiction, fantasy, or related subjects which, by the close of ${YEAR}, had published at least four (4) issues (or the equivalent in other media), at least one (1) of which appeared in ${YEAR}, and which does not qualify as a semiprozine or a fancast, and which in ${YEAR} met neither of the following criteria:
 1. Paid its contributors or staff in other than copies of the publication.
 2. Was generally available only for paid purchase`,
     nominationFieldLabels: {
@@ -192,7 +192,7 @@ If any series and a subset series thereof both receive sufficient nominations to
 
   NewWriter: {
     title: 'John W. Campbell Award',
-    description: `Award for the best new science fiction writer, sponsored by Dell Magazines (not a Hugo) A new writer is one whose first work of science fiction or fantasy appeared in ${YEAR - 1} or ${YEAR} in a professional publication. For Campbell Award purposes, a professional publication is one for which more than a nominal amount was paid, any publication that had an average press run of at least 10,000 copies, or any other criteria that the Award sponsors may designate.`,
+    description: `Award for the best new science fiction writer, sponsored by Dell Magazines (not a Hugo). A new writer is one whose first work of science fiction or fantasy appeared in ${YEAR - 1} or ${YEAR} in a professional publication. For Campbell Award purposes, a professional publication is one for which more than a nominal amount was paid, any publication that had an average press run of at least 10,000 copies, or any other criteria that the Award sponsors may designate.`,
     nominationFieldLabels: {
       author: 'Author',
       example: 'Example'
