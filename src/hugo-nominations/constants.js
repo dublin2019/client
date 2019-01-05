@@ -271,7 +271,7 @@ If any series and a subset series thereof both receive sufficient nominations to
 
   RetroDramaticLong: {
     title: `Best Dramatic Presentation, Long Form (${RETROYEAR + 1} Retro Hugo)`,
-    description: `Any theatrical feature or other production with a *complete running time of more than 90 minutes*, in any medium of dramatized science fiction, fantasy, or related subjects that was publicly presented for the first time in its present dramatic form during ${RETROYEAR}.`,
+    description: `Any theatrical feature or other production with a *complete running time of more than 90 minutes*, in any medium of dramatized science fiction, fantasy, or related subjects that was publicly presented for the first time in its then dramatic form during ${RETROYEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
       producer: 'Studio/Network/Production Company'
@@ -315,7 +315,7 @@ If any series and a subset series thereof both receive sufficient nominations to
 
   RetroSemiprozine: {
     title: `Best Semiprozine (${RETROYEAR + 1} Retro Hugo)`,
-    description: `Any generally available non-professional publication devoted to science fiction or fantasy which by the close of ${RETROYEAR} had published at least four (4) issues (or the equivalent in other media), and at least one (1) of which appeared in ${RETROYEAR}, which does not qualify as a fancast, and which in ${RETROYEAR} has met at least one (1) of the following criteria: 1. Paid its contributors or staff in other than copies of the publication. 2. Was generally available only for paid purchase.`,
+    description: `Any generally available non-professional periodical publication devoted to science fiction or fantasy or related subjects which by the close of ${RETROYEAR} had published at least four (4) issues (or the equivalent in other media), and at least one (1) of which appeared in ${RETROYEAR}, which does not qualify as a fancast, and which in ${RETROYEAR} has met at least one (1) of the following criteria: 1. Paid its contributors or staff in other than copies of the publication. 2. Was generally available only for paid purchase.`,
     nominationFieldLabels: {
       title: 'Title'
     }
@@ -323,7 +323,7 @@ If any series and a subset series thereof both receive sufficient nominations to
 
   RetroFanzine: {
     title: `Best Fanzine (${RETROYEAR + 1} Retro Hugo)`,
-    description: `Any generally available non-professional publication devoted to science fiction, fantasy, or related subjects which, by the close of ${RETROYEAR}, had published at least four (4) issues (or the equivalent in other media), at least one (1) of which appeared in ${RETROYEAR}, and which does not qualify as a semiprozine or a fancast, and which in ${RETROYEAR} met neither of the following criteria: 1. Paid its contributors or staff in other than copies of the publication. 2. Was generally available only for paid purchase.`,
+    description: `Any generally available non-professional periodical publication devoted to science fiction, fantasy, or related subjects which, by the close of ${RETROYEAR}, had published at least four (4) issues (or the equivalent in other media), at least one (1) of which appeared in ${RETROYEAR}, and which does not qualify as a semiprozine or a fancast, and which in ${RETROYEAR} met neither of the following criteria: 1. Paid its contributors or staff in other than copies of the publication. 2. Was generally available only for paid purchase.`,
     nominationFieldLabels: {
       title: 'Title'
     }
