@@ -7,10 +7,25 @@ export const categoryGroups = {
   Dramatic: ['DramaticLong', 'DramaticShort', 'RelatedWork'],
   EditorShort: [],
   EditorLong: [],
-  Artists: ['ProArtist', 'FanArtist'],
+  ProArtist: [],
+  FanArtist: [],
   Zines: ['Semiprozine', 'Fanzine', 'Fancast'],
   FanWriter: [],
-  NewWriter: []
+  BestArtBook: [],
+  NewWriter: [],
+  Lodestar: [],
+  RetroWritten: ['RetroNovel', 'RetroNovella', 'RetroNovelette', 'RetroShortStory', 'RetroRelatedWork'],
+  RetroGraphicStory: [],
+  RetroSeries: [],
+  RetroDramatic: ['RetroDramaticLong', 'RetroDramaticShort', 'RetroRelatedWork'],
+  RetroEditorShort: [],
+  RetroEditorLong: [],
+  RetroProArtist: [],
+  RetroFanArtist: [],
+  RetroZines: ['RetroSemiprozine', 'RetroFanzine', 'RetroFancast'],
+  RetroFanWriter: [],
+  RetroBestArtBook: []
+
 }
 
 export const minFinalistsPerCategory = 6

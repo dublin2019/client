@@ -78,7 +78,7 @@ class NominationList extends PureComponent {
           dataKey="category"
           key="category"
           label="Category"
-          width={80}
+          width={120}
         />
       )
     }

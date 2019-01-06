@@ -12,7 +12,7 @@ import { ConfigConsumer } from '../../lib/config-context'
 import { setNominator, clearNominationError } from '../actions'
 import { categoryInfo } from '../constants'
 
-import NominationCategory from './NominationCategory'
+import NominationRetroCategory from './NominationRetroCategory'
 import NominationSignature from './NominationSignature'
 import './Nominate.css'
 
@@ -42,7 +42,7 @@ const Messages = connect(
 const NominationsHead = ({ active, name, signature }) => (
   <Row className="bg-text">
     <Col xs={10} xsOffset={1} lg={8} lgOffset={2} style={{ paddingTop: 20 }}>
-      <h1>{'Hugo nominations for ' + name}</h1>
+      <h1>{'Retro Hugo nominations for ' + name}</h1>
       {signature ? (
         <h3 style={{ marginTop: -20 }}>Signing as "{signature}"</h3>
       ) : null}
@@ -63,10 +63,10 @@ const NominationsHead = ({ active, name, signature }) => (
         </p>
       ) : null}
       <p>
-        Thank you for participating in the 2019 Hugo Awards, John W.
-        Campbell Award and Lodestar Award! Please choose up to five eligible candidates in each
+        Thank you for participating in the 1944 Retro Hugo Awards! 
+        Please choose up to five eligible candidates in each
         category. We recommend that you nominate whatever works and creators you
-        have personally read or seen that were your favorites from 2018.
+        have personally read or seen that were your favorites from 1943.
       </p>
       <p>
         The deadline for nominations is Friday March 15th, 2019 at 11:59pm PDT (GMT+9).
@@ -85,9 +85,9 @@ const NominationsHead = ({ active, name, signature }) => (
         form.
       </p>
       <p>
-        Works published in 2018 for the first time anywhere, or for the first
+        Works published in 1943 for the first time anywhere, or for the first
         time in English translation or in the United States, are eligible for
-        the 2019 Hugo Awards. Books are considered to have been published in the
+        the 1944 Retro Hugo Awards. Books are considered to have been published in the
         year of the publication date, which usually appears with the copyright
         information on the back of the title page. If there is no stated
         publication date, the copyright date will be used instead. A dated
@@ -134,7 +134,7 @@ const NominationsHead = ({ active, name, signature }) => (
   </Row>
 )
 
-class Nominate extends React.Component {
+class NominateRetro extends React.Component {
   static propTypes = {
     id: PropTypes.number.isRequired,
     person: ImmutablePropTypes.map,
@@ -155,7 +155,7 @@ class Nominate extends React.Component {
   }
 
   componentDidMount() {
-    this.props.setScene({ title: 'Hugo Nominations', dockSidebar: false })
+    this.props.setScene({ title: 'Retro Hugo Nominations', dockSidebar: false })
   }
 
   render() {
@@ -179,7 +179,7 @@ class Nominate extends React.Component {
               <Row>
                 <Col xs={10} xsOffset={1} lg={8} lgOffset={2}>
                   {Object.keys(categoryInfo).map(category => (
-                    <NominationCategory
+                    <NominationRetroCategory
                       active={active}
                       category={category}
                       key={category}
@@ -225,4 +225,6 @@ export default connect(
     setNominator,
     setScene
   }
-)(Nominate)
+)(NominateRetro)
+
+

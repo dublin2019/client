@@ -6,6 +6,7 @@ import { keyLogin, tryLogin } from './app/actions/auth'
 import App from './app/components/App'
 import Index from './app/components/Index'
 import Nominate from './hugo-nominations/components/Nominate'
+import NominateRetro from './hugo-nominations/components/NominateRetro'
 import Vote from './hugo-votes'
 import NewDaypassForm from './membership/components/NewDaypassForm'
 import NewMemberForm from './membership/components/NewMemberForm'
@@ -35,8 +36,9 @@ export default class AppRouter extends Route {
     else this.dispatch(tryLogin(() => callback()))
   }
 
-  doLogin = ({ location: { query }, params: { email, key, id } }) => {
-    const next = (query && query.next) || (id ? `/hugo/vote/${id}` : null)
+  doLogin = ({ location: { query }, params: { email, key, id, action } }) => {
+    const newaction = action ? action : 'nominate';
+    const next = (query && query.next) || (id ? `/hugo/${newaction}/${id}` : null)
     this.dispatch(keyLogin(email, key, next))
   }
 
@@ -51,7 +53,7 @@ export default class AppRouter extends Route {
   render() {
     return (
       <Router history={this.props.history}>
-        <Route path="/login/:email/:key(/:id)" onEnter={this.doLogin} />
+        <Route path="/login/:email/:key(/:id)(/:action)" onEnter={this.doLogin} />
         <Route
           path="/"
           component={App}
@@ -65,6 +67,11 @@ export default class AppRouter extends Route {
               path="nominate/:id"
               onEnter={this.requireAuth}
               component={Nominate}
+            />
+            <Route
+              path="nominate-retro/:id"
+              onEnter={this.requireAuth}
+              component={NominateRetro}
             />
             <Route path="vote(/:id)" component={Vote} />
           </Route>

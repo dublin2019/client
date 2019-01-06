@@ -141,12 +141,12 @@ NominationBody.propTypes = {
   }).isRequired
 }
 
-const NominationCategory = ({ category, ...props }) => {
+const NominationRetroCategory = ({ category, ...props }) => {
   const { title, description, nominationFieldLabels } = categoryInfo[category]
   const fields = nominationFields(category)
   const colSpan = Math.floor(12 / fields.size)
-  const background = category.startsWith('Retro')?"RetroNominationCategory":"NominationCategory"
-  if (category.startsWith('Retro')) return null
+  const background = "NominationCategory"
+  if (!category.startsWith('Retro')) return null
   return (
     <Card className={background} >
       <CardHeader
@@ -175,51 +175,8 @@ const NominationCategory = ({ category, ...props }) => {
           maxNominations={maxNominationsPerCategory}
         />
       </CardText>
-      <NominationCategoryNote category={category} />
     </Card>
   )
-}
-
-const NominationCategoryNote = ({ category, ...props }) => {
-  if (category == 'Series') return(
-      <CardText>
-        <p>
-          <b>Note regarding Best Series eligibility</b>
-        </p>
-        <p>
-          <b>The World of the Five Gods</b>, by Lois McMaster Bujold, is a previous 
-          winner of the Hugo for Best Series under §3.3.5 of the WSFS Constitution, and 
-          is therefore not eligible in the Best Series category.
-        </p>
-        <p>
-          The following were losing finalists for the Hugo Award for Best Series in 2017, 
-          and therefore will <b>not</b> be eligible in 2019 <b>unless</b> they have 
-          published at least two (2) additional installments consisting in total of at 
-          least 240,000 words between 1 January 2017 and 31 December 2018:
-        </p>
-        <ul>
-          <li><b>The Craft Sequence</b>, by Max Gladstone</li>
-          <li><b>The Expanse</b>, by James S. A. Corey</li>
-          <li><b>The October Daye Books</b>, by Seanan McGuire</li>
-          <li><b>The Peter Grant / Rivers of London series</b>, by Ben Aaronovitch</li>
-          <li><b>The Temeraire series</b>, by Naomi Novik</li>
-        </ul>
-        <p>
-          The following were losing finalists for the Hugo Award for Best Series in 2018,
-          and therefore will <b>not</b> be eligible in 2019 <b>unless</b> they have 
-          published at least two (2) additional installments consisting in total of at 
-          least 240,000 words between 1 January 2018 and 31 December 2018:
-        </p>
-        <ul>
-          <li><b>The Books of the Raksura</b>, by Martha Wells</li>
-          <li><b>The Divine Cities</b>, by Robert Jackson Bennett</li>
-          <li><b>InCryptid</b>, by Seanan McGuire</li>
-          <li><b>The Memoirs of Lady Trent</b>, by Marie Brennan</li>
-          <li><b>The Stormlight Archive</b>, Brandon Sanderson</li>
-        </ul>
-      </CardText>
-  )
-  return null
 }
 
 export default connect(
@@ -235,4 +192,4 @@ export default connect(
       },
       dispatch
     )
-)(NominationCategory)
+)(NominationRetroCategory)

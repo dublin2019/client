@@ -12,34 +12,36 @@ const contents = {
       <div>
         <p>
           Persons who have never been attending or supporting members of any
-          previous Worldcon are eligible for a <b>First Worldcon</b> attending
-          membership of Worldcon 75.
+          previous Worldcon and are residents of the Island of Ireland 
+	  are eligible for a <b>Island of Ireland resident First Worldcon</b> attending
+          membership of Dublin 2019, an Irish Worldcon.
         </p>
         <p>
           <b>Child</b> members are not eligible to participate in the Hugo
           Awards or Site Selection processes.
         </p>
         <p>
-          A <b>Supporting</b> membership of Worldcon 75 grants you the right to
+          A <b>Supporting</b> membership of Dublin 2019, an Irish Worldcon grants you the right to
           participate in the functions of the World Science Fiction Society
           (Hugo Awards and Site Selection), but does not grant general admission
           to the convention.
         </p>
         <p>
-          Participants of the 2017 Worldcon Site Selection have been
+          Participants of the 2019 Worldcon Site Selection have been
           automatically granted supporting membership.
         </p>
       </div>
     ),
     memberships: [
-      'FirstWorldcon',
-      'Youth',
+      'YoungAdult',
       'Adult',
       '_divider',
       'Child',
-      'KidInTow',
+      'Infant',
       '_divider',
-      'Supporter'
+      'Supporter',
+      '_divider',
+      'FirstWorldcon'
     ]
   },
 
@@ -49,12 +51,13 @@ const contents = {
       <div>
         <p>
           Persons who have never been attending or supporting members of any
-          previous Worldcon are eligible for a <b>First Worldcon</b> attending
-          membership of Worldcon 75.
+          previous Worldcon and are residents of the Island of Ireland 
+	  are eligible for a <b>Island of Ireland resident First Worldcon</b> attending
+          membership of Dublin 2019, an Irish Worldcon.
         </p>
         <p>
-          Persons born on 10 August 1991 or later qualify for <b>Youth</b>{' '}
-          attending memberships of Worldcon 75 (€100).
+          Persons born on 14 August 1994 or later qualify for <b>YoungAdult</b>{' '}
+          attending memberships of Dublin 2019, an Irish Worldcon.
         </p>
         <p>
           All attending memberships carry the same rights as supporting
@@ -63,20 +66,20 @@ const contents = {
         </p>
       </div>
     ),
-    memberships: ['FirstWorldcon', 'Youth', 'Adult']
+    memberships: ['FirstWorldcon', 'YoungAdult', 'Adult']
   },
 
   child: {
-    title: 'New child/kid-in-tow membership',
+    title: 'New child/infant membership',
     body: (
       <div>
         <p>
-          <b>Child</b> and <b>Kid-in-tow</b> members are not eligible to
+          <b>Child</b> and <b>Infant</b> members are not eligible to
           participate in the Hugo Awards or Site Selection processes.
         </p>
       </div>
     ),
-    memberships: ['Child', 'KidInTow']
+    memberships: ['Child', 'Infant']
   },
 
   daypass: {
@@ -84,7 +87,7 @@ const contents = {
     body: (
       <div>
         <p>
-          If you are only able to come to Worldcon 75 for a day or two, we have
+          If you are only able to come to Dublin 2019, an Irish Worldcon for a day or two, we have
           day passes available. This pass will entitle you to enjoy the
           activities, programming and events of Worldcon for that day, except
           for the parties in the evenings.
@@ -97,7 +100,7 @@ const contents = {
         </p>
       </div>
     ),
-    memberships: ['Adult', 'Youth', 'Child']
+    memberships: ['Adult', 'YoungAdult', 'Child']
   },
 
   support: {
@@ -105,12 +108,12 @@ const contents = {
     body: (
       <div>
         <p>
-          A non-attending membership of Worldcon 75 which will grant you the
+          A non-attending membership of Dublin 2019, an Irish Worldcon which will grant you the
           right to participate in the functions of the World Science Fiction
           Society (Hugo Awards and Site Selection).
         </p>
         <p>
-          Participants of the 2017 Worldcon Site Selection have been
+          Participants of the 2019 Worldcon Site Selection have been
           automatically granted supporting membership. Supporting memberships
           may be upgraded to attending memberships.
         </p>

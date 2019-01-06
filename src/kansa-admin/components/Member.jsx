@@ -29,13 +29,13 @@ export const memberFields = [
   'membership',
   'legal_name',
   'email',
-  'badge_name',
-  'badge_subtitle',
   'public_first_name',
   'public_last_name',
   'country',
   'state',
   'city',
+  'postcode',
+  'address',
   'paper_pubs'
 ]
 
@@ -43,10 +43,12 @@ export const membershipTypes = [
   'NonMember',
   'Exhibitor',
   'Helper',
+  'HugoNominator',
+  'Guest',
   'Supporter',
-  'KidInTow',
+  'Infant',
   'Child',
-  'Youth',
+  'YoungAdult',
   'FirstWorldcon',
   'Adult'
 ]

@@ -16,7 +16,7 @@ import { ConfigConsumer } from '../../lib/config-context'
 export const hintStyle = {
   color: disabledColor,
   fontSize: 13,
-  marginBottom: 24
+  margin: '12px 0 24px'
 }
 
 const PreviewBadgeButton = ({ member, style }) => (
@@ -159,6 +159,54 @@ export default class MemberForm extends Component {
       onChange: this.onChange,
       tabIndex
     }
+    
+    const haveBadgeName = false; // TODO: once it exists in the backend, toggle
+    const badgeName = haveBadgeName ? (
+            <Row>
+              <Col xs={12}>
+                <TextInput { ...inputProps } path='badge_text' />
+              </Col>
+            </Row>
+          ) : null;
+
+      // TODO: once 'zipcode' and 'address' exists in the backend, toggle this:
+    const haveAddressAndPostcode = true;
+    const addressFields = haveAddressAndPostcode ? (<div>
+       <Row>
+         <Col xs={12}>
+            <TextInput { ...inputProps } path='address' />
+         </Col>
+       </Row>
+       <Row>
+         <Col xs={12} sm={6}>
+            <TextInput { ...inputProps } path='city' />
+         </Col>
+         <Col xs={12} sm={6}>
+            <TextInput { ...inputProps } path='state' />
+         </Col>
+       </Row>
+       <Row>
+         <Col xs={12} sm={6}>
+           <TextInput { ...inputProps } path='postcode' />
+         </Col>
+         <Col xs={12} sm={6}>
+           <TextInput { ...inputProps } path='country' />
+         </Col>
+       </Row>
+     </div>) : (
+        <Row>
+          <Col xs={12} sm={4}>
+            <TextInput { ...inputProps } path='city' />
+          </Col>
+          <Col xs={12} sm={4}>
+            <TextInput { ...inputProps } path='state' />
+          </Col>
+          <Col xs={12} sm={4}>
+            <TextInput { ...inputProps } path='country' />
+          </Col>
+        </Row>
+    );
+
     return (
       <form>
         <Row>
@@ -200,8 +248,8 @@ export default class MemberForm extends Component {
                   <div key="hint" style={hintStyle}>
                     To change the email address associated with this membership,
                     please get in touch with us at{' '}
-                    <a href="mailto:registration@worldcon.fi">
-                      registration@worldcon.fi
+                    <a href="mailto:registration@dublin2019.com">
+                      registration@dublin2019.com
                     </a>
                   </div>
                 ]}
@@ -228,22 +276,8 @@ export default class MemberForm extends Component {
             </Col>
           )}
         </Row>
-        <Row>
-          <Col xs={12} sm={4}>
-            <TextInput {...inputProps} path="city" />
-          </Col>
-          <Col xs={12} sm={4}>
-            <TextInput {...inputProps} path="state" />
-          </Col>
-          <Col xs={12} sm={4}>
-            <TextInput {...inputProps} path="country" />
-          </Col>
-          {!isAdmin && (
-            <Col xs={12} style={hintStyle}>
-              {this.msg('location_hint')}
-            </Col>
-          )}
-        </Row>
+	{ badgeName }
+	{ addressFields }
         <PaperPubs
           data={data}
           isAdmin={isAdmin}

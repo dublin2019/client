@@ -49,7 +49,16 @@ const HugoNominateAction = props => (
   <HugoAction
     attrName="hugo_nominator"
     getPath={id => `/hugo/nominate/${id}`}
-    primaryText="Nominate for the Hugo Awards"
+    primaryText="Nominate for the 2019 Hugo Awards"
+    {...props}
+  />
+)
+
+const HugoNominateRetroAction = props => (
+  <HugoAction
+    attrName="hugo_nominator"
+    getPath={id => `/hugo/nominate-retro/${id}`}
+    primaryText="Nominate for the 1944 Retro Hugo Awards"
     {...props}
   />
 )
@@ -108,8 +117,8 @@ let UpgradeAction = ({ member, paidPaperPubs, purchaseData, push }) => {
   const upgrade = mpt.some(t => t.get('amount') > prevAmount)
   const addPP = paidPaperPubs && !member.get('paper_pubs')
   if (!upgrade && !addPP) return null
-  const primaryText = upgrade ? 'Upgrade membership' : 'Add paper publications'
-  const secondaryText = upgrade && addPP ? 'and/or add paper publications' : ''
+  const primaryText = upgrade ? 'Upgrade membership' : 'Add paper progress reports'
+  const secondaryText = upgrade && addPP ? 'and/or add paper progress reports' : ''
   return (
     <Action
       leftIcon={<ThumbUp style={upgrade && addPP ? { top: 12 } : null} />}
@@ -169,11 +178,12 @@ const MemberActions = ({ member }) => (
         <List style={{ paddingTop: 0 }}>
           <EditAction member={member} />
           <UpgradeAction member={member} paidPaperPubs={paid_paper_pubs} />
-          <BarcodeAction attr={attr} member={member} />
+	      { /*   <BarcodeAction attr={attr} member={member} /> */ }
           <HugoNominateAction getMemberAttr={getMemberAttr} member={member} />
+          <HugoNominateRetroAction getMemberAttr={getMemberAttr} member={member} />
           <HugoVoteAction getMemberAttr={getMemberAttr} member={member} />
           <SiteSelectionTokenAction attr={attr} />
-          <SlackInviteAction attr={attr} />
+          { /* <SlackInviteAction attr={attr} /> */ }
           <SouvenirBookAction attr={attr} />
         </List>
       )
