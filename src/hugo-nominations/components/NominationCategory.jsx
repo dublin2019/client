@@ -17,6 +17,7 @@ import {
   maxNominationsPerCategory,
   nominationFields
 } from '../constants'
+import SaveButton from './SaveButton'
 
 import { NominationFillerRow, NominationRow } from './NominationRow'
 
@@ -37,7 +38,7 @@ class NominationActionsRow extends React.Component {
   }
 
   render() {
-    const { active, disabled, onSave, onReset, saveTime } = this.props
+    const { active, disabled, onSave, onReset, saveTime, signature } = this.props
     return (
       <Row middle="xs" style={{ paddingTop: 20 }}>
         <Col xs>
@@ -49,15 +50,7 @@ class NominationActionsRow extends React.Component {
         </Col>
         {active ? (
           <Col xs>
-            <RaisedButton
-              label="Save"
-              disabled={disabled}
-              disabledBackgroundColor="transparent"
-              icon={<ListCheck />}
-              onClick={onSave}
-              style={{ float: 'right', marginLeft: 15 }}
-              title="Save this category"
-            />
+            <SaveButton signature={signature} /> 
             <RaisedButton
               label="Reset"
               disabled={disabled}
@@ -90,7 +83,8 @@ const NominationBody = ({
   onChange,
   onSave,
   onReset,
-  state
+  state,
+  signature
 }) => {
   const clientData = state.get('clientData')
   const serverData = state.get('serverData')
@@ -124,6 +118,7 @@ const NominationBody = ({
         onSave={onSave}
         onReset={onReset}
         saveTime={serverTime ? new Date(serverTime) : null}
+        signature={signature}
       />
     </div>
   )
