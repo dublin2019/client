@@ -121,7 +121,6 @@ const MembershipSelect = ({ getDefaultValue, getValue, onChange }) => {
           key={type}
           value={type}
           primaryText={type}
-          disabled={idx < prevIdx}
         />
       ))}
     </SelectField>
