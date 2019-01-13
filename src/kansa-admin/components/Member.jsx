@@ -53,7 +53,7 @@ export const membershipTypes = [
   'YoungAdultNV',
   'FirstWorldcon',
   'FirstWorldconNV',
-  'Adult'
+  'Adult',
   'AdultNV'
 ]
 
