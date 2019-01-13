@@ -46,11 +46,15 @@ export const membershipTypes = [
   'HugoNominator',
   'Guest',
   'Supporter',
+  'SupporterNV',
   'Infant',
   'Child',
   'YoungAdult',
+  'YoungAdultNV',
   'FirstWorldcon',
+  'FirstWorldconNV',
   'Adult'
+  'AdultNV'
 ]
 
 const MemberTitle = ({ attr, member, ...props }) => {
