@@ -47,6 +47,8 @@ class NominationActionsRow extends React.Component {
               {'Last saved ' + time_diff(saveTime)}
             </span>
           ) : null}
+          { active ? ( <p>We are active</p> ) : ( <p>We are not active.</p> ) }
+          {signature}
         </Col>
         {active ? (
           <Col xs>
@@ -109,6 +111,7 @@ const NominationBody = ({
           }
           onRemove={() => onChange(idx, null)}
           values={rowValues}
+          signature={signature}
         />
       ))}
       {nominationRowLinks(maxNominations - rows.size, { colSpan, fields })}

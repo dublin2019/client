@@ -111,7 +111,8 @@ export class NominationRow extends React.Component {
       fields,
       onChange,
       onRemove,
-      values
+      values,
+      signature
     } = this.props
     return (
       <Row bottom="xs">
@@ -128,6 +129,8 @@ export class NominationRow extends React.Component {
             />
           </Col>
         ))}
+        { active ? <p>active</p> : <p>inactive</p> }
+        { signature ? ( <p>{signature}</p> ) : ( <p>anon</p> ) }
         {!active || values.isEmpty() ? null : (
           <NominationRemoveButton disabled={disabled} onRemove={onRemove} />
         )}
