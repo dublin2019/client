@@ -33,6 +33,24 @@ export const memberTypeData = {
     secondary: 'Born between 16 Aug 1993 and 15 Aug 2006 inclusive',
     icon: <DirectionsRun />
   },
+  AdultNV: {
+    primary: 'Adult membership',
+    daypass: 'Adult day pass (from â5/day)',
+    secondary: 'Born on or before 15 August 1993',
+    icon: <DirectionsWalk />
+  },
+  FirstWorldconNV: {
+    primary: 'Island of Ireland resident First Worldcon membership',
+    secondary: 'Have never been a Worldcon member and be a resident of the Island of Ireland.',
+    icon: <StarTicket />
+  },
+  YoungAdultNV: {
+      primary: 'YoungAdult membership',
+      daypass: 'YoungAdult day pass (from â5/day)',
+      secondary: 'Born between 16 Aug 1993 and 15 Aug 2006 inclusive',
+  icon: <DirectionsRun />
+  },
+	
   Child: {
     primary: 'Child membership',
     daypass: 'Child day pass (from €10/day)',
@@ -45,6 +63,10 @@ export const memberTypeData = {
     icon: <ChildFriendly />
   },
   Supporter: {
+    primary: 'Supporting membership',
+    icon: <EventSeat />
+  },
+  SupporterNV: {
     primary: 'Supporting membership',
     icon: <EventSeat />
   },

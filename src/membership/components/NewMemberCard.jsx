@@ -33,15 +33,15 @@ const contents = {
       </div>
     ),
     memberships: [
-      'YoungAdult',
-      'Adult',
+      'YoungAdultNV',
+      'AdultNV',
       '_divider',
       'Child',
       'Infant',
       '_divider',
-      'Supporter',
+      'SupporterNV',
       '_divider',
-      'FirstWorldcon'
+      'FirstWorldconNV'
     ]
   },
 
@@ -66,7 +66,7 @@ const contents = {
         </p>
       </div>
     ),
-    memberships: ['FirstWorldcon', 'YoungAdult', 'Adult']
+    memberships: ['FirstWorldconNV', 'YoungAdultiNV', 'AdultNV']
   },
 
   child: {
@@ -100,7 +100,7 @@ const contents = {
         </p>
       </div>
     ),
-    memberships: ['Adult', 'YoungAdult', 'Child']
+    memberships: ['AdultNV', 'YoungAdultNV', 'ChildNV']
   },
 
   support: {
@@ -119,7 +119,7 @@ const contents = {
         </p>
       </div>
     ),
-    memberships: ['Supporter']
+    memberships: ['SupporterNV']
   },
 
   upgrade: {
