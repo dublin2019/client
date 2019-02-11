@@ -39,7 +39,7 @@ const Messages = connect(
   />
 ))
 
-const NominationsHead = ({ active, name, signature }) => (
+const NominationsHead = ({ active, name, signature, id }) => (
   <Row className="bg-text">
     <Col xs={10} xsOffset={1} lg={8} lgOffset={2} style={{ paddingTop: 20 }}>
       <h1>{'Retro Hugo nominations for ' + name}</h1>
@@ -129,6 +129,10 @@ const NominationsHead = ({ active, name, signature }) => (
         </a>
         .
       </p>
+      <p>
+        You can also <a href={"/#/hugo/nominate/" + id }>Nominate for the 2019 
+        Hugo awards</a>.
+      </p>
       {active ? <p>We look forward to receiving your nominations.</p> : null}
     </Col>
   </Row>
@@ -175,6 +179,7 @@ class NominateRetro extends React.Component {
                 active={active}
                 name={this.name}
                 signature={signature}
+                id={id}
               />
               <Row>
                 <Col xs={10} xsOffset={1} lg={8} lgOffset={2}>
