@@ -53,6 +53,8 @@ export const membershipTypes = [
   'YoungAdultNV',
   'FirstWorldcon',
   'FirstWorldconNV',
+  'Staff',
+  'StaffNV',
   'Adult',
   'AdultNV'
 ]
