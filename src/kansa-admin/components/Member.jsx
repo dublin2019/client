@@ -47,6 +47,7 @@ export const membershipTypes = [
   'Guest',
   'Supporter',
   'SupporterNV',
+  'SupporterPaper',
   'Infant',
   'Child',
   'YoungAdult',
@@ -56,7 +57,8 @@ export const membershipTypes = [
   'Staff',
   'StaffNV',
   'Adult',
-  'AdultNV'
+  'AdultNV',
+  'AdultPaper'
 ]
 
 const MemberTitle = ({ attr, member, ...props }) => {
