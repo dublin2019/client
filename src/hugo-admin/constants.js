@@ -14,6 +14,7 @@ export const categoryGroups = {
   BestArtBook: [],
   NewWriter: [],
   Lodestar: [],
+  RelatedAndArt: ['BestArtBook','RelatedWork'],
   RetroWritten: ['RetroNovel', 'RetroNovella', 'RetroNovelette', 'RetroShortStory', 'RetroRelatedWork'],
   RetroGraphicStory: [],
   RetroSeries: [],
