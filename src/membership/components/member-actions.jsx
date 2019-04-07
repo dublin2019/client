@@ -67,7 +67,16 @@ const HugoVoteAction = props => (
   <HugoAction
     attrName="wsfs_member"
     getPath={id => `/hugo/vote/${id}`}
-    primaryText="Vote for the Hugo Awards"
+    primaryText="Vote for the 2019 Hugo Awards"
+    {...props}
+  />
+)
+
+const HugoVoteRetroAction = props => (
+  <HugoAction
+    attrName="wsfs_member"
+    getPath={id => `/hugo/vote-retro/${id}`}
+    primaryText="Vote for the 1944 Hugo Awards"
     {...props}
   />
 )
@@ -182,6 +191,7 @@ const MemberActions = ({ member }) => (
           <HugoNominateAction getMemberAttr={getMemberAttr} member={member} />
           <HugoNominateRetroAction getMemberAttr={getMemberAttr} member={member} />
           <HugoVoteAction getMemberAttr={getMemberAttr} member={member} />
+          <HugoVoteRetroAction getMemberAttr={getMemberAttr} member={member} />
           <SiteSelectionTokenAction attr={attr} />
           { /* <SlackInviteAction attr={attr} /> */ }
           <SouvenirBookAction attr={attr} />

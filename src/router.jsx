@@ -9,6 +9,7 @@ import Nominate from './hugo-nominations/components/Nominate'
 import NominateRetro from './hugo-nominations/components/NominateRetro'
 import NominateLanding from './hugo-nominations/components/NominateLanding'
 import Vote from './hugo-votes'
+import VoteRetro from './hugo-votes/index-retro'
 import NewDaypassForm from './membership/components/NewDaypassForm'
 import NewMemberForm from './membership/components/NewMemberForm'
 import NewMemberIndex from './membership/components/NewMemberIndex'
@@ -80,6 +81,7 @@ export default class AppRouter extends Route {
               component={NominateLanding}
             />
             <Route path="vote(/:id)" component={Vote} />
+            <Route path="vote-retro(/:id)" component={VoteRetro} />
           </Route>
           <Route path="daypass/:type" component={NewDaypassForm} />
           <Route path="new" component={NewMemberIndex} />
