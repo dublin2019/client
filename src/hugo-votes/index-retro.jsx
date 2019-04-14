@@ -12,7 +12,7 @@ import { ConfigConsumer } from '../lib/config-context'
 import * as MemberPropTypes from '../membership/proptypes'
 
 import { getFinalists, setVoter } from './actions'
-import VoteCategory from './components/category'
+import VoteCategoryRetro from './components/category-retro'
 import VoteIntro from './components/intro'
 import PostDeadlineContents from './components/post-deadline-contents'
 
@@ -44,7 +44,7 @@ class Vote extends React.Component {
   componentDidMount() {
     const { getFinalists, setScene } = this.props
     getFinalists()
-    setScene({ title: 'Hugo Award Voting', dockSidebar: false })
+    setScene({ title: 'Retro Hugo Award Voting', dockSidebar: false })
     this.componentDidUpdate()
   }
 
@@ -92,6 +92,7 @@ class Vote extends React.Component {
                 setSignature={signature =>
                   setVoter(person.get('id'), signature)
                 }
+                competition="retro hugos"
               />
             ) : (
               <PostDeadlineContents />
@@ -109,7 +110,7 @@ class Vote extends React.Component {
               style={{ marginBottom: -30 }}
             >
               {Object.keys(categoryInfo).map(category => (
-                <VoteCategory category={category} key={category} />
+                <VoteCategoryRetro category={category} key={category} />
               ))}
               <div
                 className="bg-text"
@@ -126,7 +127,7 @@ class Vote extends React.Component {
                   seconds. You will receive a confirmation email of your votes
                   thirty minutes after your last change.
                 </p>
-                <p>Thank you for voting in the 2019 Hugo Awards!</p>
+                <p>Thank you for voting in the 1944 Retro Hugo Awards!</p>
                 <p>
                   <Link to="/">&laquo; Return to the main member page</Link>
                 </p>

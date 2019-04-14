@@ -12,14 +12,15 @@ import * as VotePropTypes from '../proptypes'
 import CategoryList from './category-list'
 import Packet from './packet'
 
-const VoteCategory = ({
+const VoteCategoryRetro = ({
   category,
   finalists,
   packet,
   preference,
   setVotes
 }) => {
-  if (category.startsWith('Retro')) return null
+  if (!category.startsWith('Retro')) return null
+  if (finalists.size == 0) return null
   return (
   <Card className="body-card">
     <CardHeader
@@ -55,7 +56,7 @@ const VoteCategory = ({
   )
 }
 
-VoteCategory.propTypes = {
+VoteCategoryRetro.propTypes = {
   category: PropTypes.oneOf(categories),
   finalists: VotePropTypes.categoryFinalists.isRequired,
   packet: VotePropTypes.categoryPacket.isRequired,
@@ -75,4 +76,4 @@ export default connect(
   {
     setVotes
   }
-)(VoteCategory)
+)(VoteCategoryRetro)

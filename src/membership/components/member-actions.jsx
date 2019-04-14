@@ -76,7 +76,7 @@ const HugoVoteRetroAction = props => (
   <HugoAction
     attrName="wsfs_member"
     getPath={id => `/hugo/vote-retro/${id}`}
-    primaryText="Vote for the 1944 Hugo Awards"
+    primaryText="Vote for the 1944 Retro Hugo Awards"
     {...props}
   />
 )

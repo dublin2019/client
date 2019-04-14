@@ -92,6 +92,7 @@ class Vote extends React.Component {
                 setSignature={signature =>
                   setVoter(person.get('id'), signature)
                 }
+                competition="hugos"
               />
             ) : (
               <PostDeadlineContents />

@@ -16,11 +16,13 @@ const preferredName = person => {
   return pns || person.get('legal_name')
 }
 
-const VoteIntro = ({ person, setSignature, signature }) => (
+const VoteIntro = ({ person, setSignature, signature, competition }) => (
   <ConfigConsumer>
     {({ getMemberAttr }) => (
       <Card>
-        <VoteIntroText />
+        <VoteIntroText 
+          competition={competition}
+        />
         <Divider />
         {signature ? (
           <CardHeader
