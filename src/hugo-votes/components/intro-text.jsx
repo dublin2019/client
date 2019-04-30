@@ -107,7 +107,7 @@ const VoteIntroText = ({competition}) => {
     </p>
     <p>
       Please contact 
-      <a href="mailto:hugohelp@dublin2019.com">hugohelp@dublin2019.com</a> 
+      <a href="mailto:hugohelp@dublin2019.com"> hugohelp@dublin2019.com </a> 
       with any queries about the Hugo Awards.
     </p>
 
