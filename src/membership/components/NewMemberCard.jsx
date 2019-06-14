@@ -94,13 +94,13 @@ const contents = {
         </p>
         <p>
           Day passes do not include guaranteed seating to the Hugo Ceremony
-          (Friday) and the Masquerade (Saturday). While we expect to be able to
+          (Sunday) and the Masquerade (Saturday). While we expect to be able to
           seat everyone, those with full attending memberships will have
           precedence for this special event seating.
         </p>
       </div>
     ),
-    memberships: ['Adult', 'YoungAdult', 'Child']
+    memberships: ['Adult', 'YoungAdult', 'Child','FirstWorldcon']
   },
 
   support: {

@@ -24,6 +24,7 @@ export const memberTypeData = {
   },
   FirstWorldcon: {
     primary: 'Island of Ireland resident First Worldcon membership',
+    daypass: 'Island of Ireland resident First Worldcon day pass (from €15/day)',
     secondary: 'Have never been a Worldcon member and be a resident of the Island of Ireland.',
     icon: <StarTicket />
   },
