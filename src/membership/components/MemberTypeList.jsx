@@ -18,19 +18,19 @@ const SelectableList = makeSelectable(List)
 export const memberTypeData = {
   Adult: {
     primary: 'Adult membership',
-    daypass: 'Adult day pass (from €25/day)',
+    daypass: 'Adult day pass (from €35/day)',
     secondary: 'Born on or before 15 August 1993',
     icon: <DirectionsWalk />
   },
   FirstWorldcon: {
     primary: 'Island of Ireland resident First Worldcon membership',
-    daypass: 'Island of Ireland resident First Worldcon day pass (from €15/day)',
+    daypass: 'Island of Ireland resident First Worldcon day pass (from €30/day)',
     secondary: 'Have never been a Worldcon member and be a resident of the Island of Ireland.',
     icon: <StarTicket />
   },
   YoungAdult: {
     primary: 'YoungAdult membership',
-    daypass: 'YoungAdult day pass (from €15/day)',
+    daypass: 'YoungAdult day pass (from €30/day)',
     secondary: 'Born between 16 Aug 1993 and 15 Aug 2006 inclusive',
     icon: <DirectionsRun />
   },
