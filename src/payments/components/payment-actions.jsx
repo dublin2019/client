@@ -57,9 +57,9 @@ const PaymentActions = ({ buyOther, purchase, showMessage, userIds }) => {
           if (person_id && userIds && userIds.includes(person_id)) {
             actions.push(
               <FlatButton
-                href={`${API_ROOT}people/${person_id}/ballot`}
+                href={`https://dublin2019.com/hugo-awards-wsfs/site-selection/`}
                 key="ss-token"
-                label="Download personal ballot"
+                label="Download ballot"
                 primary
                 target="_blank"
               />
