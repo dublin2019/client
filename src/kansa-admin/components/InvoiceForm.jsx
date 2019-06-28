@@ -59,7 +59,6 @@ const DataField = ({ field, onChange, style = {}, value }) => {
       onChange={onChange}
       style={{ ...styles.common, ...style }}
       type={isNumber ? 'number' : null}
-      value={value}
     />
   )
 }
