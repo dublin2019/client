@@ -96,9 +96,9 @@ const InvoiceForm = ({
         key={field.get('key')}
         field={field}
         onChange={(_, value) =>
-          onChange({ data: Object.assign({}, data, { [name]: value }) })
+          onChange({ data: Object.assign({}, data, { [field.get('key')]: value }) })
         }
-        value={(data && data[name]) || ''}
+        value={(data && data[field.get('key')]) || ''}
       />
     ))}
   </form>
