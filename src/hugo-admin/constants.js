@@ -11,22 +11,9 @@ export const categoryGroups = {
   FanArtist: [],
   Zines: ['Semiprozine', 'Fanzine', 'Fancast'],
   FanWriter: [],
-  BestArtBook: [],
+  BestVideoGame: [],
   NewWriter: [],
-  Lodestar: [],
-  RelatedAndArt: ['BestArtBook','RelatedWork'],
-  RetroWritten: ['RetroNovel', 'RetroNovella', 'RetroNovelette', 'RetroShortStory', 'RetroRelatedWork'],
-  RetroGraphicStory: [],
-  RetroSeries: [],
-  RetroDramatic: ['RetroDramaticLong', 'RetroDramaticShort', 'RetroRelatedWork'],
-  RetroEditorShort: [],
-  RetroEditorLong: [],
-  RetroProArtist: [],
-  RetroFanArtist: [],
-  RetroZines: ['RetroSemiprozine', 'RetroFanzine', 'RetroFancast'],
-  RetroFanWriter: [],
-  RetroBestArtBook: []
-
+  Lodestar: []
 }
 
 export const minFinalistsPerCategory = 6

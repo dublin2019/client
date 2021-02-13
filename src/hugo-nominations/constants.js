@@ -170,9 +170,9 @@ If any series and a subset series thereof both receive sufficient nominations to
     }
   },
 
-  BestArtBook: {
-    title: 'Best Art Book',
-    description: `Any art book in the field of science fiction, fantasy, or fandom, appearing for the first time in ${YEAR} or which has been substantially modified in ${YEAR}, and which is not eligible in Best Graphic Story.`,
+  BestVideoGame: {
+    title: 'Best Video Game',
+    description: `Any video game in the field of science fiction, fantasy, or fandom, appearing for the first time in ${YEAR} or which has been substantially modified in ${YEAR}.`,
     nominationFieldLabels: {
       title: 'Title',
       author: 'Author',
