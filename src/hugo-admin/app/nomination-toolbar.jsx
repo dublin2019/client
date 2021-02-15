@@ -36,7 +36,8 @@ class NominationToolbar extends Component {
   state = {
     anchorEl: null,
     infoOpen: false,
-    menuOpen: false
+    menuOpen: false,
+    showBallotCounts: true
   }
 
   categoryMenuItem = (category, group) => {
@@ -124,8 +125,6 @@ class NominationToolbar extends Component {
     const {
       category,
       query,
-      sainteLague,
-      setSainteLague,
       setQuery
     } = this.props
     const { anchorEl, menuOpen } = this.state
@@ -167,22 +166,7 @@ class NominationToolbar extends Component {
               style={{ paddingLeft: 12 }}
               value={query}
             />
-          ) : (
-            [
-              <span key="div0">
-                Divisors:
-                {'\u00a0'} 1, 2, 3, …
-              </span>,
-              <Toggle
-                key="div1"
-                label="1, 3, 5, …"
-                labelPosition="right"
-                onToggle={(_, set) => setSainteLague(set)}
-                style={{ marginLeft: 8, width: 130 }}
-                toggled={sainteLague}
-              />
-            ]
-          )}
+          ) : ( [] )}
         </div>
       </Paper>
     )
