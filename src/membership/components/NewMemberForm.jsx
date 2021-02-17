@@ -49,7 +49,7 @@ class NewMemberForm extends React.Component {
     setScene({ title: 'New Membership', dockSidebar: false })
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const {
       email,
       params: { membership }

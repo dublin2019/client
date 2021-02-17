@@ -50,7 +50,7 @@ class Voter extends Component {
 
   state = Voter.defaultState
 
-  componentWillReceiveProps({ api, member }) {
+  UNSAFE_componentWillReceiveProps({ api, member }) {
     if (member && !member.equals(this.props.member)) {
       this.setState(Voter.defaultState)
       api

@@ -24,7 +24,7 @@ export default class Canon extends React.Component {
     return !cg || cg.length === 0 ? [category] : cg
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const { category, query } = this.props
     if (nextProps.category !== category || nextProps.query !== query) {
       this.setState({ selected: this.state.selected.clear() })

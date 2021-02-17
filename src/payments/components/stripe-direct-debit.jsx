@@ -40,7 +40,7 @@ class StripeDirectDebit extends React.Component {
     stripeKey: PropTypes.string
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if (!this.props.stripeKey) this.props.getStripeKeys()
   }
 
@@ -58,7 +58,7 @@ class StripeDirectDebit extends React.Component {
     }
   }
 
-  componentWillReceiveProps({ stripeKey }) {
+  UNSAFE_componentWillReceiveProps({ stripeKey }) {
     if (stripeKey !== this.props.stripeKey && typeof Stripe !== 'undefined') {
       Stripe.setPublishableKey(stripeKey)
     }

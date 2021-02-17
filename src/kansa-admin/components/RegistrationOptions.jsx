@@ -37,7 +37,7 @@ class RegOptionsDialog extends Component {
     this.state = { password, printer }
   }
 
-  componentWillReceiveProps({ password, printer }) {
+  UNSAFE_componentWillReceiveProps({ password, printer }) {
     if (password !== this.state.password) this.setState({ password })
     if (printer !== this.state.printer) this.setState({ printer })
   }

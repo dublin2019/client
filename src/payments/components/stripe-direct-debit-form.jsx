@@ -30,7 +30,7 @@ export default class StripeDirectDebitForm extends React.Component {
     }
   }
 
-  componentWillReceiveProps({ person }) {
+  UNSAFE_componentWillReceiveProps({ person }) {
     if (person && !person.equals(this.props.person)) {
       this.setState({
         city: person.get('city') || '',

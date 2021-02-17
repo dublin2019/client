@@ -108,7 +108,7 @@ class App extends Component {
     getConfig().then(config => this.setState({ config }))
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const { allowMenuDocked } = nextProps
     if (allowMenuDocked !== this.state.allowMenuDocked)
       this.setState(getMenuState(allowMenuDocked))

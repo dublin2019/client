@@ -50,7 +50,7 @@ class NavDrawer extends React.Component {
     }
   }
 
-  componentWillReceiveProps({ id, people }) {
+  UNSAFE_componentWillReceiveProps({ id, people }) {
     const currentMember = NavDrawer.currentMember(id, people)
     const otherMembers = NavDrawer.otherMembers(currentMember, people)
     this.setState({

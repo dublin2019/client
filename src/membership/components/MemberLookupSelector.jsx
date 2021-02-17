@@ -30,7 +30,7 @@ export default class MemberLookupSelector extends React.Component {
     foundPerson: null
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     const { people, selectedPersonId } = this.props
     const person = people.find(p => p.get('id') === selectedPersonId)
     if (person && !this.allowSelect(person.get('membership'))) {

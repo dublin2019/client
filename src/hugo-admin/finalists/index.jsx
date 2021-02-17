@@ -30,7 +30,7 @@ class Finalists extends React.Component {
     }
   }
 
-  componentWillReceiveProps({
+  UNSAFE_componentWillReceiveProps({
     allBallots,
     allNominations,
     canon,

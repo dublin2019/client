@@ -100,7 +100,7 @@ export default class MemberForm extends Component {
     this.focusRef && this.focusRef.focus()
   }
 
-  componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
     const { member, onChange } = nextProps
     if (!member) {
       this.setState({ member: Map() })

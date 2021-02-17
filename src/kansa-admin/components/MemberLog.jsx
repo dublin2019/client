@@ -42,7 +42,7 @@ export default class MemberLog extends React.Component {
     open: false
   }
 
-  componentWillReceiveProps(props) {
+  UNSAFE_componentWillReceiveProps(props) {
     if (this.state.log && props.id !== this.props.id)
       this.setState({ log: null })
   }

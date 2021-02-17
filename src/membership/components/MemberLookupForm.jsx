@@ -30,7 +30,7 @@ class MemberLookupForm extends React.Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const query = this.state.query
     const results = nextProps.lookupData.get(query)
     if (results && !results.equals(this.state.results)) {

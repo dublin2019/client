@@ -70,7 +70,7 @@ class NewPayment extends React.Component {
     else getPurchaseData()
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.purchaseData) this.init(nextProps)
   }
 

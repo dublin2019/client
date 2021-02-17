@@ -39,7 +39,7 @@ class MemberEdit extends React.Component {
         : 'Edit non-member'
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const { isOpen, sent } = this.state
     if (isOpen && sent && !nextProps.member.equals(this.props.member)) {
       this.handleClose()

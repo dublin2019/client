@@ -29,7 +29,7 @@ class NominationDetails extends React.Component {
     updateCanonEntry: PropTypes.func.isRequired
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const {
       ballots,
       fetchAllBallots,

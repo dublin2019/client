@@ -72,7 +72,7 @@ class NewDaypassForm extends React.Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const {
       email,
       params: { type }

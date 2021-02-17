@@ -28,7 +28,7 @@ class App extends React.Component {
     initHugoAdmin()
   }
 
-  componentWillReceiveProps({ initHugoAdmin, nominations }) {
+  UNSAFE_componentWillReceiveProps({ initHugoAdmin, nominations }) {
     if (!nominations) initHugoAdmin()
   }
 

@@ -31,7 +31,7 @@ class CategoryInfo extends React.Component {
     )
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const { allBallots, category, fetchAllBallots } = nextProps
     if (category && allBallots.isEmpty()) fetchAllBallots()
   }

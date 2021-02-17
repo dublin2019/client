@@ -73,7 +73,7 @@ class Upgrade extends Component {
     setScene({ title: 'Upgrade Membership', dockSidebar: false })
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.params.id !== this.props.params.id) {
       this.setState(Upgrade.getNextState(nextProps))
     }

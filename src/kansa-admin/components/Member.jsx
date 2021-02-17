@@ -105,7 +105,7 @@ class Member extends PureComponent {
     valid: true
   }
 
-  componentWillReceiveProps({ api, member, setMember }) {
+  UNSAFE_componentWillReceiveProps({ api, member, setMember }) {
     if (member && !member.equals(this.props.member)) {
       this.setState({ changes: Map(), sent: false, valid: true })
       if (!this.props.member) {

@@ -173,7 +173,7 @@ class NominationList extends PureComponent {
     return cl.join(' ')
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const c0 = this.props.categories
     const c1 = nextProps.categories
     if (!c0 || !c1 || c0.length !== c1.length) {

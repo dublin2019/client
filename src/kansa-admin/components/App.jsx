@@ -42,7 +42,7 @@ class App extends React.Component {
     getConfig().then(config => this.setState({ config }))
   }
 
-  componentWillReceiveProps({ people }) {
+  UNSAFE_componentWillReceiveProps({ people }) {
     if (this.state.member) {
       const id = this.state.member.get('id')
       const member = people && people.find(m => m && m.get('id') === id)

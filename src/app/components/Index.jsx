@@ -56,7 +56,7 @@ class Index extends Component {
     if (!purchase.get('data')) getPurchaseData()
   }
 
-  componentWillReceiveProps({ getPurchaseList, people, purchase }) {
+  UNSAFE_componentWillReceiveProps({ getPurchaseList, people, purchase }) {
     if (people.size > 0 && !purchase.get('list')) getPurchaseList()
   }
 

@@ -153,7 +153,7 @@ class NominateRetro extends React.Component {
     this.state = { signature: '' }
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const { id, person, setNominator } = nextProps
     if (person && id !== person.get('id')) setNominator(person.get('id'))
   }
