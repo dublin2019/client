@@ -36,8 +36,7 @@ class NominationToolbar extends Component {
   state = {
     anchorEl: null,
     infoOpen: false,
-    menuOpen: false,
-    showBallotCounts: true
+    menuOpen: false
   }
 
   categoryMenuItem = (category, group) => {

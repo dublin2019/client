@@ -6,7 +6,7 @@ const defaultState = Map({
   error: null,
   nominations: Map(),
   sainteLague: false,
-  showBallotCounts: false
+  showBallotCounts: true
 })
 
 export default (state = defaultState, action) => {
